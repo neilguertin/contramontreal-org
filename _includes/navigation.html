@@ -1,0 +1,31 @@
+<nav class="nav">
+    <div class="nav-left">
+        <div class="nav-logo">
+            {% if page.lang == "en" %}
+            <a href="/home"><img src="/assets/images/logo.jpg"></a>
+            {% elsif page.lang == "fr" %}
+            <a href="/acceuil"><img src="/assets/images/logo.jpg"></a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="nav-right">
+        {% for nav in site.data.navigation %}
+        <span class="nav-link">
+            {% if page.lang == "en" %}
+            <a href={{ nav.target.en }}>{{ nav.name.en }}</a>
+            {% elsif page.lang == "fr" %}
+            <a href={{ nav.target.fr }}>{{ nav.name.fr }}</a>
+            {% endif %}
+        </span>
+        {% endfor %}
+
+        <span class="nav-link" id="nav-lang-switch">
+            {% if page.lang == "en" %}
+            <a href={{ page.translation }}>Français</a>
+            {% elsif page.lang == "fr" %}
+            <a href={{ page.translation }}>English</a>
+            {% endif %}
+        </span>
+    </div>
+</nav>

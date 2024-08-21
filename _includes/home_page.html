@@ -1,0 +1,175 @@
+<script>
+    // Calculate the next dance. This can't be done with Jekyll/Liquid
+    // because the html is generated at build time. The calculation
+    // needs to happen at run time.
+    function getNextDance() {
+        today = new Date();
+        upcoming_dance_nodes = document.getElementsByClassName('upcoming-dance');
+        next_dance_div = document.getElementById('next-dance-div');
+        next_dance_node = document.getElementById('next-dance-card');
+        for (const dance_node of upcoming_dance_nodes) {
+            dance_date = new Date(dance_node.getAttribute('data-date'));
+            dance_date = new Date(dance_date.valueOf()+24*60*60*1000); // Was previous midnight, so add one day
+            if (dance_date >= today) {
+                const new_dance_node = dance_node.cloneNode(true);
+                new_dance_node.classList.remove('upcoming-dance');
+                new_dance_node.id = 'next-dance';
+                next_dance_div.replaceChild(new_dance_node,next_dance_node);
+                next_dance_div.style.display = 'initial';
+                break;
+            }
+        }
+    }
+    document.addEventListener('DOMContentLoaded', getNextDance);
+</script>
+
+<img alt="A blurry photo of dancers" src="/assets/images/banner_cropped.jpg">
+
+<div id="next-dance-div" style="display: none">
+<h2>
+{% if page.lang == "en" %}
+Our next dance
+{% elsif page.lang == "fr" %}
+La prochaine danse
+{% endif %}
+</h2>
+<div class="dance-card" id='next-dance-card'>
+(To be filled in with javascript)
+</div>
+</div>
+
+<h1>
+{% if page.lang == "en" %}
+Welcome to ContraMontreal!
+{% elsif page.lang == "fr" %}
+Bienvenue à ContraMontreal!
+{% endif %}
+</h2>
+
+{% if page.lang == "en" %}
+<p>Contra dancing is a fun social activity. We always dance to live music. Dancers of all ages, genders, and experience levels are able and encouraged to dance together. Our dances are beginner friendly! If this is your first time coming to a contra dance or you want to learn more about it please read our (link)New Dancer FAQ(/link).</p>
+{% elsif page.lang == "fr" %}
+<p>Welcome text, beginner friendly, usually second and fourth saturdays, link to new dancer FAQ</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Location</h3>
+<p>Our dances are usually at Patro Villeray, 7355 Avenue Christophe-Colomb. The closest metro station is Jean-Talon, on the orange and blue lines. After going in the main entrance on Avenue Christophe-Colomb, Room R.01 is down the hall to the left.</p>
+{% elsif page.lang == "fr" %}
+<p>Text about location</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Time</h3>
+<p>We dance on most second and fourth Saturdays from September to June.</p>
+<p>Our dances are usually in the evening. There is an introductory lesson at 6:30pm, recommended for new dancers. The main event starts at 7pm and goes to 9:30pm, with a short break in the middle.</p>
+{% elsif page.lang == "fr" %}
+<h3></h3>
+<p>Text about time</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Cost</h3>
+<p>We have a sliding scale payment system. We offer this price flexibility to keep our dances accessible while also being able to pay our talented musicians and callers. Cash is preferred, but we also accept Interac eTransfer and PayPal.</p>
+<ul>
+    <li>Minimum: $8</li>
+    <li>Suggested: $15-20</li>
+    <li>Sponsor: $25</li>
+    <li>Children: Free</li>
+</ul>
+{% elsif page.lang == "fr" %}
+<h3></h3>
+<p>Text about price</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Safety</h3>
+<p>To keep all of our dancers and our community safe, please stay home if you have cold or flu-like symptoms, even if they are minor. Masks are optional at all of our dances.</p>
+{% elsif page.lang == "fr" %}
+<h3></h3>
+<p>Text about Covid and masks</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Contact</h3>
+<ul>
+    <li>(link)Subscribe to our newsletter(/link) to never miss a dance.</li>
+    <li>Email us at <a href="mailto:info@contramontreal.org">info@contramontreal.org</a></li>
+    <li>Follow us on Instagram <a href="https://www.instagram.com/contramontreal/">@contramontreal</a></li>
+    <li>Follow us on Facebook <a href="https://www.facebook.com/contramontreal">@contramontreal</a></li>
+    <li>Join our Facebook group <a href="https://www.facebook.com/groups/223410984511785/">Montreal Contra Dances</a></li>
+</ul>
+{% elsif page.lang == "fr" %}
+<h3></h3>
+<p>Follow us on places. Link to media page. Link to contact page</p>
+{% endif %}
+
+<h2>
+{% if page.lang == "en" %}
+Dances this season
+{% elsif page.lang == "fr" %}
+Danses cette saison
+{% endif %}
+</h2>
+
+{% for dance in site.data.dances %}
+<div class="dance-card upcoming-dance" data-date="{{dance.date}}">
+    <div class="dance-special">
+        {% if page.lang == "en" %}
+        {{dance.special.en}}
+        {% elsif page.lang == "fr" %}
+        {{dance.special.fr}}
+        {% endif %}
+    </div>
+    <div class="dance-date">
+    {% if dance.date and dance.date != "" %}
+        {% assign months_index = dance.date | date: "%m" | minus: 1 %}
+        {% assign day_index = dance.date | date: "%w" | minus: 0 %}
+        {% if page.lang == "en" %}
+        {% assign month_text = site.data.data.months.en[months_index] %}
+        {% assign day_text = site.data.data.days.en[day_index] %}
+        {{ day_text }}, {{month_text}} {{ dance.date | date: "%d" }}, {{ dance.date | date: "%Y" }}
+        {% elsif page.lang == "fr" %}
+        {% assign month_text = site.data.data.months.fr[months_index] %}
+        {% assign day_text = site.data.data.days.fr[day_index] %}
+        {{ day_text }} {{ dance.date | date: "%d" }} {{ month_text }} {{ dance.date | date: "%Y" }}
+        {% endif %}
+    {% endif %}
+    </div>
+    <div class="dance-time">
+        {% if page.lang == "en" %}
+        {% if dance.time.en and dance.time.en != "" %}{{dance.time.en}}{% else %}{{site.data.data.default_time.en}}{% endif %}
+        {% elsif page.lang == "fr" %}
+        {% if dance.time.fr and dance.time.fr != "" %}{{dance.time.fr}}{% else %}{{site.data.data.default_time.fr}}{% endif %}
+        {% endif %}
+    </div>
+    <div class="dance-location">
+        {% if page.lang == "en" %}
+        {% if dance.location.en and dance.location.en != "" %}{{dance.location.en}}{% else %}{{site.data.data.default_location.en}}{% endif %}
+        {% elsif page.lang == "fr" %}
+        {% if dance.location.fr and dance.location.fr != "" %}{{dance.location.fr}}{% else %}{{site.data.data.default_location.fr}}{% endif %}
+        {% endif %}
+    </div>
+    <div class="dance-band">
+        {% if page.lang == "en" %}
+        {% if dance.band.en and dance.band.en != "" %}Band: {{dance.band.en}}{% endif %}
+        {% elsif page.lang == "fr" %}
+        {% if dance.band.fr and dance.band.fr != "" %}Musique par: {{dance.band.fr}}{% endif %}
+        {% endif %}
+    </div>
+    <div class="dance-caller">
+        {% if page.lang == "en" %}
+        {% if dance.caller.en and dance.caller.en != "" %}Caller: {{dance.caller.en}}{% endif %}
+        {% elsif page.lang == "fr" %}
+        {% if dance.caller.fr and dance.caller.fr != "" %}Callé par: {{dance.caller.fr}}{% endif %}
+        {% endif %}
+    </div>
+    <div class="dance-text">
+        {% if page.lang == "en" %}
+        {{dance.text.en}}
+        {% elsif page.lang == "fr" %}
+        {{dance.text.fr}}
+        {% endif %}
+    </div>
+</div>
+{% endfor %}

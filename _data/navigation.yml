@@ -1,0 +1,18 @@
+- name:
+    en: Home
+    fr: Acceuil
+  target:
+    en: /home
+    fr: /acceuil
+- name:
+    en: New Dancer FAQ
+    fr: FAQ pour les debutant(e)s
+  target:
+    en: /newdancerfaq
+    fr: /faqpourdebutants
+- name:
+    en: Code of Conduct
+    fr: Code de conduite
+  target:
+    en: /codeofconduct
+    fr: /codedeconduite

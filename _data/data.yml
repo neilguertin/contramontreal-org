@@ -1,0 +1,52 @@
+default_time:
+  en: "6:30pm - 9:30pm"
+  fr: "18h30 - 21h30"
+default_location:
+  en: "Patro Villeray Room R.01"
+  fr: "Patro Villeray Salle R.01"
+
+months:
+  en:
+    - January
+    - Feburary
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  fr:
+    - janvier
+    - fevrier
+    - mars
+    - avril
+    - mai
+    - juin
+    - juillet
+    - août
+    - séptembre
+    - octobre
+    - novembre
+    - décembre
+days:
+  en:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+  fr:
+    - dimanche
+    - lundi
+    - mardi
+    - mercredi
+    - jeudi
+    - vendredi
+    - samedi
+

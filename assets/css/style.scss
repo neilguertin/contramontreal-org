@@ -1,0 +1,44 @@
+---
+---
+/* cayman */
+@import "cayman";
+.page-header {
+    display: none
+}
+.site-footer {
+    display: none
+}
+
+/* custom css */
+nav {
+    overflow: hidden;
+}
+.nav-left {
+    float: left;
+}
+.nav-right {
+    float: right;
+    transform: translateY(calc(2rem - 50%));
+}
+.nav-logo img {
+    height: 4rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.nav-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.dance-card {
+    background-color: $code-bg-color;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.dance-special {
+    color: red;
+    font-weight: bold;
+}
+.dance-date {
+    font-weight: bold;
+}
