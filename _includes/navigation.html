@@ -2,9 +2,9 @@
     <div class="nav-left">
         <div class="nav-logo">
             {% if page.lang == "en" %}
-            <a href="/home"><img src="/assets/images/logo.jpg"></a>
+            <a href="{{site.baseurl}}/home"><img src="{{site.baseurl}}/assets/images/logo.jpg"></a>
             {% elsif page.lang == "fr" %}
-            <a href="/acceuil"><img src="/assets/images/logo.jpg"></a>
+            <a href="{{site.baseurl}}/acceuil"><img src="{{site.baseurl}}/assets/images/logo.jpg"></a>
             {% endif %}
         </div>
     </div>
@@ -13,18 +13,18 @@
         {% for nav in site.data.navigation %}
         <span class="nav-link">
             {% if page.lang == "en" %}
-            <a href={{ nav.target.en }}>{{ nav.name.en }}</a>
+            <a href="{{site.baseurl}}{{nav.target.en}}">{{ nav.name.en }}</a>
             {% elsif page.lang == "fr" %}
-            <a href={{ nav.target.fr }}>{{ nav.name.fr }}</a>
+            <a href="{{site.baseurl}}{{nav.target.fr}}">{{ nav.name.fr }}</a>
             {% endif %}
         </span>
         {% endfor %}
 
         <span class="nav-link" id="nav-lang-switch">
             {% if page.lang == "en" %}
-            <a href={{ page.translation }}>Français</a>
+            <a href="{{site.baseurl}}{{page.translation}}">Français</a>
             {% elsif page.lang == "fr" %}
-            <a href={{ page.translation }}>English</a>
+            <a href="{{site.baseurl}}{{page.translation}}">English</a>
             {% endif %}
         </span>
     </div>
