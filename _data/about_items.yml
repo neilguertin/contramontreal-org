@@ -1,10 +1,4 @@
 - name:
-    en: Home
-    fr: Acceuil
-  target:
-    en: /home
-    fr: /acceuil
-- name:
     en: New Dancer FAQ
     fr: FAQ pour les debutant(e)s
   target:

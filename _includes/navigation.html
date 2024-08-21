@@ -10,22 +10,41 @@
     </div>
 
     <div class="nav-right">
-        {% for nav in site.data.navigation %}
-        <span class="nav-link">
+        <div class="nav-item">
             {% if page.lang == "en" %}
-            <a href="{{site.baseurl}}{{nav.target.en}}">{{ nav.name.en }}</a>
+            <a href="{{site.baseurl}}/home">Home</a>
             {% elsif page.lang == "fr" %}
-            <a href="{{site.baseurl}}{{nav.target.fr}}">{{ nav.name.fr }}</a>
+            <a href="{{site.baseurl}}/acceuil">Acceuil</a>
             {% endif %}
-        </span>
-        {% endfor %}
+        </div>
 
-        <span class="nav-link" id="nav-lang-switch">
+        <div class="dropdown nav-item">
+            <div class="dropdown-trigger">
+                {% if page.lang == "en" %}
+                <a>About ▾</a>
+                {% elsif page.lang == "fr" %}
+                <a>À propos ▾</a>
+                {% endif %}
+            </div>
+            <div class="dropdown-content">
+                {% for nav in site.data.about_items %}
+                <div class="nav-item">
+                    {% if page.lang == "en" %}
+                    <a href="{{site.baseurl}}{{nav.target.en}}">{{ nav.name.en }}</a>
+                    {% elsif page.lang == "fr" %}
+                    <a href="{{site.baseurl}}{{nav.target.fr}}">{{ nav.name.fr }}</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="nav-item" id="nav-lang-switch">
             {% if page.lang == "en" %}
             <a href="{{site.baseurl}}{{page.translation}}">Français</a>
             {% elsif page.lang == "fr" %}
             <a href="{{site.baseurl}}{{page.translation}}">English</a>
             {% endif %}
-        </span>
+        </div>
     </div>
 </nav>
