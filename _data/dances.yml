@@ -1,10 +1,19 @@
 # Copy one of these templates for each dance, and delete
-# the # character at the beginning of each line
+#   the # character at the beginning of each line.
 # Date should be in the format "2024-12-31"
 # Special and text are optional, if they are missing
-# or blank they will not appear on the page
+#   or blank they will not appear on the page.
 # Time and location are optional, if they are missing
-# or blank it will use the default values defined in data.yml
+#   or blank it will use the default values defined in data.yml
+#   Put in a space " " to remove them from the page.
+# Band and caller should be filled in, but if they are not
+#   known they can be left blank and they will not appear on
+#   the page. They can also be given separate en and fr names, but
+#   those cannot be blank.
+
+#- date: ""
+#  band: ""
+#  caller: ""
 
 #- date: ""
 #  time:
@@ -14,11 +23,11 @@
 #    en: ""
 #    fr: ""
 #  band:
-#    en: ""
-#    fr: ""
+#    en: "band"
+#    fr: "band"
 #  caller:
-#    en: ""
-#    fr: ""
+#    en: "caller"
+#    fr: "caller"
 #  text:
 #    en: ""
 #    fr: ""
@@ -26,63 +35,124 @@
 #    en: ""
 #    fr: ""
 
-#- date: ""
-#  band:
-#    en: ""
-#    fr: ""
-#  caller:
-#    en: ""
-#    fr: ""
-
-- date: "2024-08-20"
-  time:
-    en: "1:30pm - 4:30pm"
-    fr: "13h30 - 16h30"
-  band:
-    en: "Test dance"
-    fr: "Test dance"
-
 - date: "2024-08-24"
   time:
     en: "1:30pm - 4:30pm"
     fr: "13h30 - 16h30"
-  band:
-    en: "Grace Henrickson-Jones, Jabo deGroot-Maggetti, and Maia Dagher"
-    fr: "Grace Henrickson-Jones, Jabo deGroot-Maggetti, et Maia Dagher"
-  caller:
-    en: "Qwill Duval"
-    fr: "Qwill Duval"
+  band: "Grace Henrickson-Jones, Jacob deGroot-Maggetti, and ???"
+  caller: "Qwill Duval"
   special:
     en: "Afternoon dance!"
     fr: "Danse à l'après-midi!"
 
 - date: "2024-09-14"
-  band:
-    en: ""
-    fr: ""
-  caller:
-    en: "On Call"
-    fr: "On Call"
+  band: ""
+  caller: "On Call"
   text:
     en: "On Call is our local caller's collective featuring exciting local talent"
     fr: "On Call is our local caller's collective featuring exciting local talent"
 
 - date: "2024-09-28"
-  band:
-    en: ""
-    fr: ""
-  caller:
-    en: ""
-    fr: ""
+  band: ""
+  caller: ""
 
 - date: "2024-10-12"
   band:
     en: "Open Band"
     fr: "Open Band"
-  caller:
-    en: ""
-    fr: ""
+  caller: ""
   special:
     en: "Open band! Contact us if you would like to play!"
     fr: "Open band! Rejoindre-nous si vous voulez jouer!"
+
+- date: "2024-10-26"
+  band: ""
+  caller: ""
+
+- date: "2024-11-09"
+  band: ""
+  caller: "Annie Kidwell"
+
+- date: "2024-11-23"
+  band: ""
+  caller: ""
+
+- date: "2024-12-08"
+  band: ""
+  caller: ""
+  special:
+    en: "Sunday dance. Room 1.01"
+    fr: "dimanche. Salle 1.01"
+  location:
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
+
+- date: "2024-12-14"
+  band: ""
+  caller: ""
+
+- date: "2024-12-28"
+  band: ""
+  caller: ""
+  special:
+    en: "No dance"
+    fr: "Aucune danse"
+  time:
+    en: " "
+    fr: " "
+  location:
+    en: " "
+    fr: " "
+
+
+- date: "2025-01-11"
+  band: ""
+  caller: ""
+
+- date: "2025-01-25"
+  band: ""
+  caller: ""
+
+- date: "2025-02-08"
+  band: ""
+  caller: ""
+
+- date: "2025-02-22"
+  band: ""
+  caller: ""
+
+- date: "2025-03-02"
+  band: ""
+  caller: ""
+  special:
+    en: "Sunday dance"
+    fr: "dimanche"
+
+- date: "2025-03-08"
+  band: ""
+  caller: ""
+
+- date: "2025-03-22"
+  band: ""
+  caller: ""
+
+- date: "2025-04-12"
+  band: ""
+  caller: ""
+
+- date: "2025-04-19"
+  band: ""
+  caller: ""
+
+- date: "2025-05-10"
+  band: ""
+  caller: ""
+
+- date: "2025-05-24"
+  band: ""
+  caller: ""
+
+- date: "2025-06-14"
+  band: ""
+  caller: ""
 
