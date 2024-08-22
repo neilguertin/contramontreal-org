@@ -10,6 +10,13 @@
 }
 
 /* custom css */
+body {
+    background-color: #96b5e4;
+}
+main {
+    background-color: white;
+}
+
 nav {
     background-color: white;
     height: 5rem;
@@ -63,3 +70,8 @@ nav .dropdown:hover .dropdown-content {
 .dance-date {
     font-weight: bold;
 }
+
+.banner-img, .footer-img {
+    width: 100%;
+}
+
