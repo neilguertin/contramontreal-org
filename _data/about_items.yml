@@ -2,8 +2,8 @@
     en: New Dancer FAQ
     fr: FAQ pour les debutant(e)s
   target:
-    en: /newdancerfaq
-    fr: /faqpourdebutants
+    en: /faq_en
+    fr: /faq_fr
 - name:
     en: Code of Conduct
     fr: Code de conduite
