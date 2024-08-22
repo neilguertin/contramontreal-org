@@ -1,0 +1,25 @@
+<p>
+{% if page.lang == "en" %}
+Use this form to sign up for our newsletter.
+{% elsif page.lang == "fr" %}
+Use this form to sign up for our newsletter.
+{% endif %}
+</p>
+
+<p>
+{% if page.lang == "en" %}
+Or you can sign up for the newsletter at any of our dances.
+{% elsif page.lang == "fr" %}
+Or you can sign up for the newsletter at any of our dances.
+{% endif %}
+</p>
+
+<p>
+{% if page.lang == "en" %}
+Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to sign up using this form. Click the shield icon to the left of the address bar.
+{% elsif page.lang == "fr" %}
+Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to sign up using this form. Click the shield icon to the left of the address bar.
+{% endif %}
+</p>
+
+{% include mailchimp_form.html %}

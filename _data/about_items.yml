@@ -10,3 +10,9 @@
   target:
     en: /codeofconduct
     fr: /codedeconduite
+- name:
+    en: Newsletter
+    fr: Newsletter
+  target:
+    en: /newsletter
+    fr: /newsletterfr
