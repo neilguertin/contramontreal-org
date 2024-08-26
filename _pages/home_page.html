@@ -34,7 +34,7 @@ La prochaine danse
 {% endif %}
 </h2>
 <div class="dance-card" id='next-dance-card'>
-(To be filled in with javascript)
+    <!-- To be filled in with javascript -->
 </div>
 </div>
 
@@ -47,47 +47,68 @@ Bienvenue à ContraMontreal!
 </h1>
 
 {% if page.lang == "en" %}
-<p>Contra dancing is a fun social activity. We always dance to live music. Dancers of all ages, genders, and experience levels are able and encouraged to dance together. Our dances are beginner friendly! If this is your first time coming to a contra dance or you want to learn more about it please read our <a href="{{site.baseurl}}/faq_en">New Dancer FAQ</a>.</p>
+<p>Contra dancing is a traditional social dance.</p>
+<ul>
+<li><strong>Live music!</strong> We always dance to live music, by talented local or travelling musicians.</li>
+<li><strong>No experience necessary!</strong> Contra dancing is very beginner friendly. There is no complicated footwork and there is a caller to guide you the whole way. If you can walk you can dance!</li>
+<li><strong>Community-oriented!</strong> Our dances have dancers of all ages, genders, and experience levels, and anyone can dance with anyone!</li>
+<li><strong>Come alone or with a friend!</strong> It is not necessary to bring a partner. You will dance with many different people throughout the evening.</li>
+</ul>
+<p>If you have never been to a contra dance before please read our <a href="{{site.baseurl}}/faq_en">New Dancer FAQ</a>.</p>
 {% elsif page.lang == "fr" %}
-<p>Welcome text, beginner friendly, usually second and fourth saturdays, link to new dancer FAQ</p>
+<p>To be translated</p>
+{% endif %}
+
+{% if page.lang == "en" %}
+<h3>Schedule</h3>
+<p>We dance on most second and fourth Saturdays from September to June.</p>
+<p>Our typical schedule is:</p>
+<ul>
+    <li>6:30pm - 7pm: Introductory lesson, recommended for new dancers</li>
+    <li>7pm - 9:30pm: Contra dance</li>
+</ul>
+{% elsif page.lang == "fr" %}
+<h3>Calandrier et Horaire</h3>
+<p>To be translated</p>
 {% endif %}
 
 {% if page.lang == "en" %}
 <h3>Location</h3>
-<p>Our dances are usually at Patro Villeray, 7355 Avenue Christophe-Colomb. The closest metro station is Jean-Talon, on the orange and blue lines. After going in the main entrance on Avenue Christophe-Colomb, Room R.01 is down the hall to the left.</p>
+<p>Our dances are usually at Patro Villeray, 7355 Avenue Christophe-Colomb, Montreal.</p>
+<p>Getting there:</p>
+<ul>
+    <li>Metro: The closest metro station is Jean-Talon, on the orange and blue lines, a ten minute walk from the hall</li>
+    <li>Bike: There are bike lanes on Christophe-Colomb and bike parking in front of the hall</li>
+    <li>Car: Parking is available in the parking lot in front of the building, accessible from Avenue Christoph-Colomb, or the parking lot behind the building, accessible from Rue Everett</li>
+</ul>
+<p>Go in the main entrance on Avenue Christophe-Colomb, then go down the hallway to the left to find Room R.01.</p>
+<p>Please be advised that there is major construction on Rue Jean-Talon Est, and the intersection with Avenue Christophe-Colomb may be closed to vehicles at times. The area is still passable on foot and bike.</p>
 {% elsif page.lang == "fr" %}
-<p>Text about location</p>
-{% endif %}
-
-{% if page.lang == "en" %}
-<h3>Time</h3>
-<p>We dance on most second and fourth Saturdays from September to June.</p>
-<p>Our dances are usually in the evening. There is an introductory lesson at 6:30pm, recommended for new dancers. The main event starts at 7pm and goes to 9:30pm, with a short break in the middle.</p>
-{% elsif page.lang == "fr" %}
-<h3></h3>
-<p>Text about time</p>
+<h3>Lieu</h3>
+<p>To be translated</p>
 {% endif %}
 
 {% if page.lang == "en" %}
 <h3>Cost</h3>
-<p>We have a sliding scale payment system. We offer this price flexibility to keep our dances accessible while also being able to pay our talented musicians and callers. Cash is preferred, but we also accept Interac eTransfer and PayPal.</p>
+<p>We have a sliding scale payment system.</p>
 <ul>
     <li>Minimum: $8</li>
     <li>Suggested: $15-20</li>
     <li>Sponsor: $25</li>
     <li>Children: Free</li>
 </ul>
+<p>We offer this price flexibility to keep our dances accessible while also being able to pay our talented musicians and callers. Cash is preferred, but we also accept Interac eTransfer and PayPal.</p>
 {% elsif page.lang == "fr" %}
-<h3></h3>
-<p>Text about price</p>
+<h3>Coût</h3>
+<p>To be translated</p>
 {% endif %}
 
 {% if page.lang == "en" %}
 <h3>Safety</h3>
 <p>To keep all of our dancers and our community safe, please stay home if you have cold or flu-like symptoms, even if they are minor. Masks are optional at all of our dances.</p>
 {% elsif page.lang == "fr" %}
-<h3></h3>
-<p>Text about Covid and masks</p>
+<h3>Santé</h3>
+<p>To be translated</p>
 {% endif %}
 
 {% if page.lang == "en" %}
@@ -100,8 +121,8 @@ Bienvenue à ContraMontreal!
     <li>Email us at <a href="mailto:info@contramontreal.org">info@contramontreal.org</a></li>
 </ul>
 {% elsif page.lang == "fr" %}
-<h3></h3>
-<p>Follow us on places. Link to media page. Link to contact page</p>
+<h3>Coordonnées</h3>
+<p>To be translated</p>
 {% endif %}
 
 <h2>
