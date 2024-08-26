@@ -10,6 +10,7 @@
 #   known they can be left blank and they will not appear on
 #   the page. They can also be given separate en and fr names, but
 #   those cannot be blank.
+# WARNING: Make sure each row is indented exactly two spaces!
 
 #- date: ""
 #  band: ""
@@ -39,31 +40,31 @@
   time:
     en: "1:30pm - 4:30pm"
     fr: "13h30 - 16h30"
-  band: "Grace Henrickson-Jones, Jacob deGroot-Maggetti, and ???"
+  band: "Grace Henrickson-Jones and Jacob deGroot-Maggetti"
   caller: "Qwill Duval"
   special:
     en: "Afternoon dance!"
     fr: "Danse à l'après-midi!"
 
 - date: "2024-09-14"
-  band: ""
-  caller: "On Call"
-  text:
-    en: "On Call is our local caller's collective featuring exciting local talent"
-    fr: "On Call is our local caller's collective featuring exciting local talent"
-
-- date: "2024-09-28"
-  band: ""
-  caller: ""
-
-- date: "2024-10-12"
   band:
     en: "Open Band"
     fr: "Open Band"
   caller: ""
   special:
     en: "Open band! Contact us if you would like to play!"
-    fr: "Open band! Rejoindre-nous si vous voulez jouer!"
+    fr: "Open band! Rejoingnez-nous si vous voulez jouer!"
+
+- date: "2024-09-28"
+  band: ""
+  caller: ""
+
+- date: "2024-10-12"
+  band: ""
+  caller: "On Call"
+  text:
+    en: "On Call is our caller's collective featuring exciting local talent"
+    fr: "On Call est notre collectif de calleur.euse.s mettant en vedette des personnes locales excitantes "
 
 - date: "2024-10-26"
   band: ""
@@ -103,7 +104,6 @@
   location:
     en: " "
     fr: " "
-
 
 - date: "2025-01-11"
   band: ""
