@@ -177,16 +177,28 @@ Danses cette saison
     </div>
     <div class="dance-band">
         {% if page.lang == "en" %}
-        {% if dance.band.en and dance.band.en != "" %}Band: {{dance.band.en}}{% elsif dance.band and dance.band != "" %}Band: {{dance.band}}{% endif %}
+        {% if dance.band.en and dance.band.en != "" %}Band: {{dance.band.en}}
+        {% elsif dance.band and dance.band != "" %}Band: {{dance.band}}
+        {% elsif dance.band or dance.band.en %}Band: TBD
+        {% endif %}
         {% elsif page.lang == "fr" %}
-        {% if dance.band.fr and dance.band.fr != "" %}Musique par: {{dance.band.fr}}{% elsif dance.band and dance.band != "" %}Musique par: {{dance.band}}{% endif %}
+        {% if dance.band.fr and dance.band.fr != "" %}Musique par: {{dance.band.fr}}
+        {% elsif dance.band and dance.band != "" %}Musique par: {{dance.band}}
+        {% elsif dance.band or dance.band.fr %}Musique par: À déterminer
+        {% endif %}
         {% endif %}
     </div>
     <div class="dance-caller">
         {% if page.lang == "en" %}
-        {% if dance.caller.en and dance.caller.en != "" %}Caller: {{dance.caller.en}}{% elsif dance.caller and dance.caller != "" %}Caller: {{dance.caller}}{% endif %}
+        {% if dance.caller.en and dance.caller.en != "" %}Caller: {{dance.caller.en}}
+        {% elsif dance.caller and dance.caller != "" %}Caller: {{dance.caller}}
+        {% elsif dance.caller or dance.caller.en %}Caller: TBD
+        {% endif %}
         {% elsif page.lang == "fr" %}
-        {% if dance.caller.fr and dance.caller.fr != "" %}Callé par: {{dance.caller.fr}}{% elsif dance.caller and dance.caller != "" %}Callé par: {{dance.caller}}{% endif %}
+        {% if dance.caller.fr and dance.caller.fr != "" %}Callé par: {{dance.caller.fr}}
+        {% elsif dance.caller and dance.caller != "" %}Callé par: {{dance.caller}}
+        {% elsif dance.caller or dance.caller.fr %}Callé par: À déterminer
+        {% endif %}
         {% endif %}
     </div>
     <div class="dance-text">
