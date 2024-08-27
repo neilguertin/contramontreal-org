@@ -6,7 +6,8 @@
         today = new Date();
         upcoming_dance_nodes = document.getElementsByClassName('upcoming-dance');
         next_dance_div = document.getElementById('next-dance-div');
-        next_dance_node = document.getElementById('next-dance-card');
+        next_dance_card = document.getElementById('next-dance-card');
+        next_dance_node = document.getElementById('next-dance');
         for (const dance_node of upcoming_dance_nodes) {
             dance_date = new Date(dance_node.getAttribute('data-date'));
             dance_date = new Date(dance_date.valueOf()+24*60*60*1000); // Was previous midnight, so add one day
@@ -14,9 +15,11 @@
                 const new_dance_node = dance_node.cloneNode(true);
                 new_dance_node.classList.remove('upcoming-dance');
                 new_dance_node.id = 'next-dance';
-                next_dance_div.replaceChild(new_dance_node,next_dance_node);
+                next_dance_card.replaceChild(new_dance_node,next_dance_node);
                 next_dance_div.style.display = 'initial';
                 break;
+            } else {
+                dance_node.classList.replace('upcoming-dance','passed-dance');
             }
         }
     }
@@ -33,8 +36,10 @@ Our next dance
 La prochaine danse
 {% endif %}
 </h2>
-<div class="dance-card" id='next-dance-card'>
+<div class="dance-card" id="next-dance-card">
+<div id="next-dance">
     <!-- To be filled in with javascript -->
+</div>
 </div>
 </div>
 
@@ -132,7 +137,8 @@ Danses cette saison
 </h2>
 
 {% for dance in site.data.dances %}
-<div class="dance-card upcoming-dance" data-date="{{dance.date}}">
+<div class="dance-card">
+    <div class="upcoming-dance" data-date="{{dance.date}}">
     <div class="dance-special">
         {% if page.lang == "en" %}
         {{dance.special.en}}
@@ -189,6 +195,7 @@ Danses cette saison
         {% elsif page.lang == "fr" %}
         {{dance.text.fr}}
         {% endif %}
+    </div>
     </div>
 </div>
 {% endfor %}
