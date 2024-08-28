@@ -50,7 +50,7 @@
   band:
     en: "Open Band"
     fr: "Open Band"
-  caller: ""
+  caller: "Luke Donforth"
   special:
     en: "Open band! Contact us if you would like to play!"
     fr: "Open band! Rejoingnez-nous si vous voulez jouer!"
@@ -68,7 +68,7 @@
 
 - date: "2024-10-26"
   band: ""
-  caller: ""
+  caller: "Drew Delaware"
 
 - date: "2024-11-09"
   band: ""
@@ -90,7 +90,7 @@
 
 - date: "2024-12-14"
   band: ""
-  caller: ""
+  caller: "Rick Szumski"
 
 - date: "2024-12-28"
   special:
