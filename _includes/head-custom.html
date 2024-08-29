@@ -1,7 +1,15 @@
 <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<!-- Setup Google Analytics -->
-{% include head-custom-google-analytics.html %}
+<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K6CMVJKT9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1K6CMVJKT9');
+</script>
 
 <!-- favicons from https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
