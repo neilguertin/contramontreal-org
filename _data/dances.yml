@@ -79,11 +79,14 @@
   caller: ""
 
 - date: "2024-12-08"
+  time:
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
   band: ""
   caller: ""
   special:
-    en: "Sunday dance. Room 1.01"
-    fr: "dimanche. Salle 1.01"
+    en: "Sunday afternoon dance. Room 1.01"
+    fr: "dimanche après-midi. Salle 1.01"
   location:
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
@@ -120,11 +123,14 @@
   caller: ""
 
 - date: "2025-03-02"
+  time:
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
   band: ""
   caller: ""
   special:
-    en: "Sunday dance"
-    fr: "dimanche"
+    en: "Sunday afternoon dance"
+    fr: "dimanche après-midi"
 
 - date: "2025-03-08"
   band: ""
