@@ -12,7 +12,7 @@
     fr: /codedeconduite
 - name:
     en: Newsletter
-    fr: Newsletter
+    fr: Bulletin
   target:
     en: /newsletter
-    fr: /newsletterfr
+    fr: /bulletin
