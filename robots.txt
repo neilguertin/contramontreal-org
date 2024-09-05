@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /codeofconduct
+Disallow: /codedeconduite
+Disallow: /newsletter
+Disallow: /bulletin
+Allow: /
+Allow: /home
+Allow: /acceuil
