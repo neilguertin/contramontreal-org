@@ -11,8 +11,8 @@
     en: /codeofconduct
     fr: /codedeconduite
 - name:
-    en: Newsletter
-    fr: Bulletin
+    en: Mailing List
+    fr: Liste de diffusion
   target:
-    en: /newsletter
-    fr: /bulletin
+    en: /mailinglist
+    fr: /listedediffusion
