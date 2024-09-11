@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /codeofconduct
-Disallow: /codedeconduite
-Disallow: /mailinglist
-Disallow: /listedediffusion
-Allow: /
-Allow: /home
-Allow: /acceuil
