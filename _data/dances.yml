@@ -58,21 +58,19 @@
   caller: "Peter Simonyi"
 
 - date: "2024-10-12"
-  band: ""
+  band: "Steve Jones & Marie-Christine Lance"
   caller: "On Call"
   text:
     en: "On Call is our caller's collective featuring exciting local talent"
     fr: "On Call est notre collectif de calleur.euse.s mettant en vedette des personnes locales excitantes "
 
 - date: "2024-10-26"
-  band:
-    en: "Richard Forest and friends"
-    fr: "Richard Forest et amis"
-  caller: ""
+  band: "Richard Forest & Jean Rhéaume"
+  caller: "Nicholas Smith"
 
 - date: "2024-11-09"
-  band: ""
-  caller: ""
+  band: "Carmen Guérard, Liette Remon, & André Marchand"
+  caller: "Mary Collins"
 
 - date: "2024-11-23"
   band: ""
@@ -83,7 +81,7 @@
     en: "1:30pm - 4:30pm"
     fr: "13h30 - 16h30"
   band: "Cojiro"
-  caller: ""
+  caller: "Jonathan Werk"
   special:
     en: "Sunday afternoon dance. Room 1.01"
     fr: "dimanche après-midi. Salle 1.01"
