@@ -61,7 +61,6 @@ theme: jekyll-theme-cayman
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - icons/
   - _pages/*_page.html
 
 include:
