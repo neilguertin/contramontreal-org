@@ -2,15 +2,21 @@
     // Calculate the next dance. This can't be done with Jekyll/Liquid
     // because the html is generated at build time. The calculation
     // needs to happen at run time.
+    // Comparison is done with date objects with local timezone.
+    // The time portion of these objects is 0 so only the date is compared
     function getNextDance() {
         today = new Date();
+        today.setHours(0,0,0,0);
         upcoming_dance_nodes = document.getElementsByClassName('upcoming-dance');
         next_dance_div = document.getElementById('next-dance-div');
         next_dance_card = document.getElementById('next-dance-card');
         next_dance_node = document.getElementById('next-dance');
         for (const dance_node of upcoming_dance_nodes) {
-            dance_date = new Date(dance_node.getAttribute('data-date'));
-            dance_date = new Date(dance_date.valueOf()+24*60*60*1000); // Was previous midnight, so add one day
+            // Have to construct the date like this because
+            // new Date(dance_node.getAttribute('data-date'))
+            // creates it at UTC midnight
+            dance_date_str = dance_node.getAttribute('data-date'); // Like 2024-01-01
+            dance_date = new Date(dance_date_str.slice(0,4),dance_date_str.slice(5,7)-1,dance_date_str.slice(8,10));
             if (dance_date >= today) {
                 const new_dance_node = dance_node.cloneNode(true);
                 new_dance_node.classList.remove('upcoming-dance');
