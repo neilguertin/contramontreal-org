@@ -5,6 +5,12 @@
     en: /faq_en
     fr: /faq_fr
 - name:
+    en: Get Involved
+    fr: Impliquez-vous
+  target:
+    en: /getinvolved
+    fr: /impliquezvous
+- name:
     en: Code of Conduct
     fr: Code de conduite
   target:
