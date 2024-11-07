@@ -70,8 +70,18 @@ nav .dropdown:hover .dropdown-content {
 .dance-date {
     font-weight: bold;
 }
-.passed-dance {
-    opacity: .5;
+.past-dance {
+    display: none; // Show with button click
+    opacity: 50%;
+}
+.show-hide-button {
+    color: $body-link-color;
+    background-color: $code-bg-color;
+    border: 1px solid $body-link-color;
+    border-radius: 5px;
+}
+.show-hide-button:hover {
+    opacity: 50%;
 }
 
 .banner-img, .footer-img {

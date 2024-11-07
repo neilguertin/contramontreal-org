@@ -25,11 +25,36 @@
                 next_dance_div.style.display = 'initial';
                 break;
             } else {
-                dance_node.classList.add('passed-dance');
+                dance_node.classList.add('past-dance');
             }
         }
     }
     document.addEventListener('DOMContentLoaded', getNextDance);
+
+    // Show/hide past dances
+    function showPastDances() {
+        var dance_nodes = document.getElementsByClassName('past-dance');
+        for (let dance_node of dance_nodes) {
+            dance_node.style.display = 'initial';
+        }
+        document.getElementById('show-button').style.display = 'none';
+        document.getElementById('hide-button').style.display = 'initial';
+    }
+    function hidePastDances() {
+        var dance_nodes = document.getElementsByClassName('past-dance');
+        for (let dance_node of dance_nodes) {
+            dance_node.style.display = 'none';
+        }
+        document.getElementById('show-button').style.display = 'initial';
+        document.getElementById('hide-button').style.display = 'none';
+    }
+    function setupButtons() {
+        document.getElementById('show-button').onclick = showPastDances;
+        document.getElementById('hide-button').onclick = hidePastDances;
+        document.getElementById('show-button').style.display = 'initial';
+        document.getElementById('hide-button').style.display = 'none';
+    }
+    document.addEventListener('DOMContentLoaded', setupButtons);
 </script>
 
 <img class="banner-img" alt="A blurry photo of dancers" src="{{site.baseurl}}/assets/images/banner_cropped.jpg">
@@ -172,6 +197,15 @@ Dances this season
 Danses cette saison
 {% endif %}
 </h2>
+
+
+{% if page.lang == "en" %}
+<button id="show-button" class="show-hide-button">Show past dances</button>
+<button id="hide-button" class="show-hide-button">Hide past dances</button>
+{% elsif page.lang == "fr" %}
+<button id="show-button" class="show-hide-button">Montrer les danses passées</button>
+<button id="hide-button" class="show-hide-button">Cacher les danses passées</button>
+{% endif %}
 
 {% for dance in site.data.dances %}
 <div class="dance-card">
