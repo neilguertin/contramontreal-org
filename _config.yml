@@ -27,6 +27,7 @@ baseurl: "" # Set to "contramontreal-org" when using GitHub Pages default url (h
 url: "https://www.contramontreal.org" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 facebook:
   publisher: contramontreal
 logo: "assets/logo.jpg"
