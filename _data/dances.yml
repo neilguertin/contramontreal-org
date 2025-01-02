@@ -106,8 +106,8 @@
 
 - date: "2025-01-11"
   time:
-    en: "3:00pm - 6:00pm"
-    fr: "15h00 - 18h00"
+    en: "3:00pm - 6:00pm, Introductory lesson 3:00pm - 3:30pm"
+    fr: "15h00 - 18h00, Cours d'introduction 15h00 - 15h30"
   band: "Les Quatre Patates"
   caller: "On Call"
   special:
@@ -131,8 +131,8 @@
 
 - date: "2025-03-02"
   time:
-    en: "1:30pm - 4:30pm"
-    fr: "13h30 - 16h30"
+    en: "1:30pm - 4:30pm, Introductory lesson 1:30pm - 2:00pm"
+    fr: "13h30 - 16h30, Cours d'introduction 13h30 - 14h00"
   band: "Stove Dragon"
   caller: "Grace Hendrickson-Jones"
   special:
@@ -166,8 +166,8 @@
 
 - date: "2025-05-03"
   time:
-    en: "3:00pm - 6:00pm"
-    fr: "15h00 - 18h00"
+    en: "3:00pm - 6:00pm, Introductory lesson 3:00pm - 3:30pm"
+    fr: "15h00 - 18h00, Cours d'introduction 15h00 - 15h30"
   band: ""
   caller: ""
   special:
