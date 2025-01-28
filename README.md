@@ -42,3 +42,13 @@ Jekyll does not have great multi-lingual support. Here is a simple workaround th
 The site uses the built in [Cayman](https://github.com/pages-themes/cayman) theme. The most visible parts of the theme have been hidden, but we still benefit from some default colors, default layout, SEO setup, and so on.
 
 To add a new page: Add the three pages `title_en.html`, `title_fr.html` and `title_page.html`. Also add an entry to `_data/about_items.yml`.
+
+## Content
+When designing the site, the following types of users were considered. Please keep them in mind when adding or removing content to make sure they are all served well:
+* General public with no knowledge of contra dance (e.g. journalists, venue staff). They might need to know what our organization does at a basic level.
+* People who have never been to a dance but have heard about it and are curious. They will need some basic information about contra dance and encouragement to come for the first time.
+* Returning or regular dancers. They might need dates, times, and other info about specific dances they are already planning to attend.
+* Visiting out of town dancers who already know what contra is but have never been to our dance. They will need to know local specifics such as dates and locations.
+* Musicians and callers, either local or out-of-town, experience with playing for contra or not. They may need to know our schedule and open dates, and other basic information about our dance.
+
+And here is a basic checklist: https://www.jefftk.com/p/dance-website-checklist
