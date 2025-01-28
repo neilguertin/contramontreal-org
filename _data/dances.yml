@@ -122,12 +122,12 @@
   caller: "Nicholas Smith"
 
 - date: "2025-02-08"
-  band: "Bernard Soubry & Friends"
+  band: "Kittiwake"
   caller: "On Call"
 
 - date: "2025-02-22"
-  band: ""
-  caller: ""
+  band: "Open Band"
+  caller: "Jonathan Werk"
 
 - date: "2025-03-02"
   time:
@@ -144,15 +144,15 @@
 
 - date: "2025-03-08"
   band: ""
-  caller: ""
+  caller: "On Call"
 
 - date: "2025-03-22"
-  band: ""
-  caller: ""
+  band: "KLEZ contra: Isaac Beaudet Lefebvre, François-Xavier Dueymes, Zafer Mamilli and Eden Glasman"
+  caller: "Grace Hendrickson-Jones"
 
 - date: "2025-04-05"
-  band: ""
-  caller: ""
+  band: "Open Band"
+  caller: "Evan De Smitt"
   special:
     en: "Room 1.01"
     fr: "Salle 1.01"
@@ -162,7 +162,7 @@
 
 - date: "2025-04-19"
   band: ""
-  caller: ""
+  caller: "On Call"
 
 - date: "2025-05-03"
   time:
