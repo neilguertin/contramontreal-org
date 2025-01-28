@@ -8,7 +8,7 @@ default_location:
 months:
   en:
     - January
-    - Feburary
+    - February
     - March
     - April
     - May
@@ -21,14 +21,14 @@ months:
     - December
   fr:
     - janvier
-    - fevrier
+    - février
     - mars
     - avril
     - mai
     - juin
     - juillet
     - août
-    - séptembre
+    - septembre
     - octobre
     - novembre
     - décembre
