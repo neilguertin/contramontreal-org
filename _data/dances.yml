@@ -168,17 +168,21 @@
   time:
     en: "3:00pm - 6:00pm, Introductory lesson 3:00pm - 3:30pm"
     fr: "15h00 - 18h00, Cours d'introduction 15h00 - 15h30"
-  band: ""
-  caller: ""
+  band: "Open Band"
+  caller: "Peter Simonyi"
   special:
     en: "Afternoon dance"
     fr: "Danse à l'après-midi"
 
 - date: "2025-05-24"
   band: ""
-  caller: ""
+  caller: "On Call"
 
 - date: "2025-06-14"
   band: ""
   caller: ""
+
+- date: "2025-07-12"
+  band: "Open Band"
+  caller: "On Call"
 
