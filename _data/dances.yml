@@ -182,7 +182,24 @@
   band: ""
   caller: ""
 
+- date: "2025-06-28"
+  time:
+    en: "1:30pm - 4:30pm, Introductory lesson 1:30pm - 2:00pm"
+    fr: "13h30 - 16h30, Cours d'introduction 13h30 - 14h00"
+  band: "Cojiro with Grace Hendrickson-Jones"
+  caller: "Nicholas Smith"
+  special:
+    en: "Afternoon dance"
+    fr: "Danse à l'après-midi"  
+
 - date: "2025-07-12"
+  time:
+    en: "1:30pm - 4:30pm, Introductory lesson 1:30pm - 2:00pm"
+    fr: "13h30 - 16h30, Cours d'introduction 13h30 - 14h00"
   band: "Open Band"
   caller: "On Call"
+  special:
+    en: "Afternoon dance"
+    fr: "Danse à l'après-midi"  
+
 
