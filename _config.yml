@@ -41,6 +41,8 @@ locale: en_CA
 # Build settings
 #theme: minima
 theme: jekyll-theme-cayman
+compress_html:
+  blanklines: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
