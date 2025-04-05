@@ -10,7 +10,7 @@ There are many technologies that go into this site: Jekyll, Ruby, Liquid, Markdo
 First you will need to make a GitHub account and ask me to add you as a collaborator for this repository.
 
 ### Small changes
-Small changes can be made directly in the GitHub website.
+Small changes can be made directly in the GitHub interface.
 1. Open the file you want to change (probably `_data/dances.yml` or `_pages/home_page.html`)
 2. Click "Edit this file" (the small pencil icon in the top right)
 3. Make your changes
@@ -18,7 +18,7 @@ Small changes can be made directly in the GitHub website.
 5. Wait 2 minutes, then verify that the changes have taken effect on the website.
 
 ### Larger changes
-For larger changes, such as adding a new page, it is necessary to build the site locally in order to verify that the changes are working before commiting and pushing to the public page.
+For larger changes, such as adding a new page, it is necessary to build the site locally in order to verify that the changes are working before commiting and pushing to the public site.
 
 1. Install and run locally
 
@@ -33,7 +33,7 @@ bundler exec jekyll serve --livereload --baseurl="" --drafts
 ```
 The website should now be live at http://localhost:4000/
 
-2. Make changes. The website should automatically update after saving each file.
+2. Make changes. The website should automatically update after saving each file. Changes to `_config.yml` require rerunning the `bundler exec` command.
 3. Commit and push changes. Unfortunately there is not space here to write a full git and GitHub tutorial.
 
 ## Site design
