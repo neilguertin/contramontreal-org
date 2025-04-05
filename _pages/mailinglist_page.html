@@ -1,3 +1,13 @@
+<script>
+window.onload = function() {
+    if (navigator.userAgent.search("Firefox") > 0) {
+        var p = document.getElementById('firefox-warning');
+        if (p) {
+            p.style.display = 'initial';
+        }
+    }
+}
+</script>
 <h1>
 {% if page.lang == "en" %}
 Mailing List
@@ -22,7 +32,7 @@ Ou vous pouvez vous inscrire à notre liste de diffusion à l'un de nos danses.
 {% endif %}
 </p>
 
-<p>
+<p id=firefox-warning style='display: none'>
 {% if page.lang == "en" %}
 Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to sign up using this form. Click the shield icon to the left of the address bar.
 {% elsif page.lang == "fr" %}
