@@ -243,10 +243,13 @@
     en: "6:30pm - 9:30pm"
     fr: "18h30 - 21h30"
   location:
-    en: "Patro Villeray Room R.01"
-    fr: "Patro Villeray Salle R.01"
+    en: "Patro Villeray Room 1.02 - 1.03"
+    fr: "Patro Villeray Salle 1.02 - 1.03"
   band: "Kittiwake"
   caller: "On Call"
+  special:
+    en: "Room 1.02 - 1.03"
+    fr: "Salle 1.02 - 1.03"
 
 - date: "2025-05-03"
   time:
