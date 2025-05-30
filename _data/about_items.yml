@@ -2,23 +2,23 @@
     en: New Dancer FAQ
     fr: FAQ pour les debutant(e)s
   target:
-    en: /faq_en
-    fr: /faq_fr
+    en: /en/faq
+    fr: /fr/faq
 - name:
     en: Get Involved
     fr: Impliquez-vous
   target:
-    en: /getinvolved
-    fr: /impliquezvous
+    en: /en/getinvolved
+    fr: /fr/impliquezvous
 - name:
     en: Code of Conduct
     fr: Code de conduite
   target:
-    en: /codeofconduct
-    fr: /codedeconduite
+    en: /en/codeofconduct
+    fr: /fr/codedeconduite
 - name:
     en: Mailing List
     fr: Liste de diffusion
   target:
-    en: /mailinglist
-    fr: /listedediffusion
+    en: /en/mailinglist
+    fr: /fr/listedediffusion
