@@ -22,3 +22,9 @@
   target:
     en: /en/mailinglist
     fr: /fr/listedediffusion
+- name:
+    en: Other Dance Communities
+    fr: Autres communautés de dance
+  target:
+    en: /en/other_communities
+    fr: /fr/autres_communautés
