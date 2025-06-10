@@ -1,7 +1,11 @@
 <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Umami analytics -->
+{% if site.url == "https://www.contramontreal.org" %}
 <script async defer src="https://umami.neilguertin.com/script.js" data-website-id="436c9620-b38d-4144-9f67-febe9cf3ef64"></script>
+{% else %}
+<!-- Analytics turned off for development -->
+{% endif %}
 
 <!-- favicons from https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
