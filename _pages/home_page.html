@@ -198,14 +198,20 @@ Danses cette saison
 {% endif %}
 </h2>
 
-
+<button id="show-button" class="show-hide-button" style="display: none">
 {% if page.lang == "en" %}
-<button id="show-button" class="show-hide-button">Show past dances</button>
-<button id="hide-button" class="show-hide-button">Hide past dances</button>
+Show past dances
 {% elsif page.lang == "fr" %}
-<button id="show-button" class="show-hide-button">Montrer les danses passées</button>
-<button id="hide-button" class="show-hide-button">Cacher les danses passées</button>
+Montrer les danses passées
 {% endif %}
+</button>
+<button id="hide-button" class="show-hide-button" style="display: none">
+{% if page.lang == "en" %}
+Hide past dances
+{% elsif page.lang == "fr" %}
+Cacher les danses passées
+{% endif %}
+</button>
 
 {% for dance in site.data.dances %}
 <div class="dance-card">
