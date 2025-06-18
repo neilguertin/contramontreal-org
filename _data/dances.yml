@@ -286,26 +286,114 @@
 
 - date: "2025-06-28"
   time:
-    en: "1:30pm - 4:30pm, Introductory lesson 1:30pm - 2:00pm"
-    fr: "13h30 - 16h30, Cours d'introduction 13h30 - 14h00"
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
   band: "Cojiro with Grace Hendrickson-Jones"
   caller: "Nicholas Smith"
-  special:
-    en: "Afternoon dance"
-    fr: "Danse à l'après-midi"
 
 - date: "2025-07-12"
   time:
-    en: "1:30pm - 4:30pm, Introductory lesson 1:30pm - 2:00pm"
-    fr: "13h30 - 16h30, Cours d'introduction 13h30 - 14h00"
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
   band: "Open Band"
   caller: "On Call"
+
+- date: "2025-08-23"
+  time:
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-09-07"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "Open Band"
+  caller: "On Call"
   special:
-    en: "Afternoon dance"
-    fr: "Danse à l'après-midi"
+    en: "Free dance!"
+    fr: "Danse gratuite!"
+
+- date: "2025-09-20"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-10-05"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "Frost & Fire"
+  caller: "Luke Donforth"
+
+- date: "2025-10-18"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-11-09"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-11-22"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-12-07"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2025-12-20"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
