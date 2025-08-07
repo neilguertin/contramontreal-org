@@ -1,0 +1,11 @@
+<h1>
+{% if page.lang == "en" %}
+Past Dances
+{% elsif page.lang == "fr" %}
+Danses passées
+{% endif %}
+</h1>
+
+{% for dance in site.data.dances %}
+{% include dance_card.html dance = dance %}
+{% endfor %}

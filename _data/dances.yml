@@ -30,6 +30,122 @@
 #    en: ""
 #    fr: ""
 
+- date: "2024-08-24"
+  time:
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Grace Henrickson-Jones and Jacob deGroot-Maggetti"
+  caller: "Qwill Duvall"
+  special:
+    en: "Afternoon dance"
+    fr: "Danse à l'après-midi"
+
+- date: "2024-09-14"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Open Band"
+  caller: "Luke Donforth"
+  special:
+    en: "Open band! Contact us if you would like to play!"
+    fr: "Open band! Rejoingnez-nous si vous voulez jouer!"
+
+- date: "2024-09-28"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Les Quatre Patates"
+  caller: "Peter Simonyi"
+
+- date: "2024-10-12"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Steve Jones & Marie-Christine Lance"
+  caller: "On Call"
+  text:
+    en: "On Call is our caller's collective featuring exciting local talent"
+    fr: "On Call est notre collectif de calleur.euse.s mettant en vedette des personnes locales excitantes "
+
+- date: "2024-10-26"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Richard Forest & Jean Rhéaume"
+  caller: "Nicholas Smith"
+
+- date: "2024-11-09"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Carmen Guérard, Liette Remon, & André Marchand"
+  caller: "Mary Collins"
+
+- date: "2024-11-23"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Jacob deGroot-Maggetti & Friends"
+  caller: "Drew Delaware"
+
+- date: "2024-12-08"
+  time:
+    en: "1:30pm - 4:30pm"
+    fr: "13h30 - 16h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Cojiro & Grace Hendrickson-Jones"
+  caller: "Jonathan Werk"
+  special:
+    en: "Sunday afternoon dance. Room 1.01"
+    fr: "Dimanche après-midi. Salle 1.01"
+  location:
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
+
+- date: "2024-12-14"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "Open Band"
+  caller: "Rick Szumski"
+
+- date: "2024-12-28"
+  special:
+    en: "No dance. Happy Holidays!"
+    fr: "Aucune danse. Joyeuses fêtes!"
+  time:
+    en: " "
+    fr: " "
+  location:
+    en: " "
+    fr: " "
+
 - date: "2025-01-11"
   time:
     en: "3:00pm - 6:00pm, Introductory lesson 3:00pm - 3:30pm"

@@ -23,6 +23,12 @@
     en: /en/mailinglist
     fr: /fr/listedediffusion
 - name:
+    en: Past Dances
+    fr: Danses passées
+  target:
+    en: /en/pastdances
+    fr: /fr/dansespassées
+- name:
     en: Other Dance Communities
     fr: Autres communautés de dance
   target:

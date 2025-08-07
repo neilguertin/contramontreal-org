@@ -1,0 +1,73 @@
+<div class="dance-card">
+    <div class="upcoming-dance" data-date="{{dance.date}}">
+        <div class="dance-special">
+            {% if page.lang == "en" %}
+                {{dance.special.en}}
+            {% elsif page.lang == "fr" %}
+                {{dance.special.fr}}
+            {% endif %}
+        </div>
+        <div class="dance-date">
+        {% if dance.date and dance.date != "" %}
+            {% assign months_index = dance.date | date: "%m" | minus: 1 %}
+            {% assign day_index = dance.date | date: "%w" | minus: 0 %}
+            {% if page.lang == "en" %}
+                {% assign month_text = site.data.data.months.en[months_index] %}
+                {% assign day_text = site.data.data.days.en[day_index] %}
+                {{ day_text }}, {{month_text}} {{ dance.date | date: "%d" }}, {{ dance.date | date: "%Y" }}
+            {% elsif page.lang == "fr" %}
+                {% assign month_text = site.data.data.months.fr[months_index] %}
+                {% assign day_text = site.data.data.days.fr[day_index] %}
+                {{ day_text }} {{ dance.date | date: "%d" }} {{ month_text }} {{ dance.date | date: "%Y" }}
+            {% endif %}
+        {% endif %}
+        </div>
+        <div class="dance-time">
+            {% if page.lang == "en" %}
+                {% if dance.time.en and dance.time.en != "" %}
+                    {% if dance.time.en == "TBD" %}Time: TBD{% else %}{{dance.time.en}}{% endif %}
+                {% endif %}
+            {% elsif page.lang == "fr" %}
+                {% if dance.time.fr and dance.time.fr != "" %}
+                    {% if dance.time.fr == "TBD" %}Heure: À déterminer{% else %}{{dance.time.fr}}{% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="dance-location">
+            {% if page.lang == "en" %}
+                {% if dance.location.en and dance.location.en != "" %}
+                    {% if dance.location.en == "TBD" %}Location: TBD{% else %}{{dance.location.en}}{% endif %}
+                {% endif %}
+            {% elsif page.lang == "fr" %}
+                {% if dance.location.fr and dance.location.fr != "" %}
+                    {% if dance.location.fr == "TBD" %}Lieu: À déterminer{% else %}{{dance.location.fr}}{% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="dance-band">
+            {% if page.lang == "en" %}
+                {% if dance.band and dance.band != "" %}Band: {{dance.band}}{% endif %}
+            {% elsif page.lang == "fr" %}
+                {% if dance.band and dance.band != "" %}
+                    {% if dance.band == "TBD" %}Musique par: À déterminer{% else %}Musique par: {{dance.band}}{% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="dance-caller">
+            {% if page.lang == "en" %}
+                {% if dance.caller and dance.caller != "" %}Caller: {{dance.caller}}{% endif %}
+            {% elsif page.lang == "fr" %}
+                {% if dance.caller and dance.caller != "" %}
+                    {% if dance.caller == "TBD" %}Callé par: À déterminer{% else %}Callé par: {{dance.caller}}{% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="dance-text">
+            {% if page.lang == "en" %}
+                {{dance.text.en}}
+            {% elsif page.lang == "fr" %}
+                {{dance.text.fr}}
+            {% endif %}
+        </div>
+    </div>
+</div>
