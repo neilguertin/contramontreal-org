@@ -2,6 +2,9 @@
 ---
 /* cayman */
 @import "cayman";
+
+$accent-text-color: #cc1c74 !default;
+
 .page-header {
     display: none
 }
@@ -88,3 +91,71 @@ nav .dropdown:hover .dropdown-content {
     width: 100%;
 }
 
+.center-highlight {
+    text-align: center;
+    color: $accent-text-color;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.center-highlight .big {
+    font-size: 2rem;
+}
+.register-button {
+    text-align: center;
+    background-color: $header-bg-color-secondary;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: none;
+}
+.register-button:hover {
+    text-decoration: none;
+    opacity: 85%;
+}
+
+.imgparagraph {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.imgparagraph p {
+    flex: 1;
+}
+.imgparagraph.reverse {
+    flex-direction: row-reverse;
+}
+.imgparagraph * {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.imgparagraph.forward > *:first-child,
+.imgparagraph.reverse > *:last-child {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+.imgparagraph.forward > *:last-child,
+.imgparagraph.reverse > *:first-child {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+.imgparagraph img {
+    max-width: 300px;
+    height: auto;
+}
+@media screen and (max-width:42em) {
+.imgparagraph p {
+    color: red;
+    flex-basis: 100%;
+}
+.imgparagraph * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.imgparagraph img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+}
+}
