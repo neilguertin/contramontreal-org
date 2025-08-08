@@ -285,7 +285,7 @@
     en: "Patro Villeray Room 1.03"
     fr: "Patro Villeray Salle 1.03"
   band: "Anika Anderson and Jacob deGroot-Maggetti"
-  caller: "TBD"
+  caller: "Grace Hendrickson-Jones"
 
 - date: "2025-09-07"
   time:
@@ -328,7 +328,7 @@
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
   band: "TBD"
-  caller: "TBD"
+  caller: "On Call"
 
 - date: "2025-11-09"
   time:
@@ -337,7 +337,7 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
+  band: "Open Band"
   caller: "TBD"
 
 - date: "2025-11-22"
@@ -367,6 +367,6 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
-  caller: "TBD"
+  band: "Open Band"
+  caller: "On Call"
 
