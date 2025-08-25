@@ -18,8 +18,11 @@ body {
 }
 main {
     background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
+/* navigation */
 nav {
     background-color: white;
     height: 5rem;
@@ -29,7 +32,6 @@ nav {
 }
 .nav-right {
     float: right;
-    transform: translateY(calc(2rem - 50%));
 }
 .nav-logo img {
     height: 4rem;
@@ -149,4 +151,14 @@ nav .dropdown:hover .dropdown-content {
     max-height: 300px;
     width: auto;
 }
+}
+
+/* Mailchimp form */
+#mc_embed_signup {
+  width: 100%;
+  max-width: 100%;
+}
+#mc_embed_shell {
+  position: relative;
+  z-index: -1;
 }
