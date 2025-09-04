@@ -21,9 +21,8 @@
 title: ContraMontreal
 tagline: Montreal's local contra dance
 email: info@contramontreal.org
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines
   Community-oriented, easy-to-learn social dancing in Montreal
-baseurl: "" # Set to "contramontreal-org" when using GitHub Pages default url (https://neilguertin.github.io/contramontreal-org/). Set to "" when using custom domain name (https://contramontreal.org/). When baseurl is set, run locally with `bundle exec jekyll serve --livereload --baseurl=""`
 url: "https://www.contramontreal.org" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-sitemap

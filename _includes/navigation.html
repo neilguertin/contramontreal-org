@@ -2,9 +2,9 @@
     <div class="nav-left">
         <div class="nav-logo">
             {% if page.lang == "en" %}
-            <a href="{{site.baseurl}}/en/home"><img src="{{site.baseurl}}/assets/images/logo.jpg"></a>
+            <a href="/en/home"><img src="/assets/images/logo.jpg"></a>
             {% elsif page.lang == "fr" %}
-            <a href="{{site.baseurl}}/fr/accueil"><img src="{{site.baseurl}}/assets/images/logo.jpg"></a>
+            <a href="/fr/accueil"><img src="/assets/images/logo.jpg"></a>
             {% endif %}
         </div>
     </div>
@@ -12,9 +12,9 @@
     <div class="nav-right">
         <div class="nav-item">
             {% if page.lang == "en" %}
-            <a href="{{site.baseurl}}/en/home">Home</a>
+            <a href="/en/home">Home</a>
             {% elsif page.lang == "fr" %}
-            <a href="{{site.baseurl}}/fr/accueil">Accueil</a>
+            <a href="/fr/accueil">Accueil</a>
             {% endif %}
         </div>
 
@@ -30,9 +30,9 @@
                 {% for nav in site.data.about_items %}
                 <div class="nav-item">
                     {% if page.lang == "en" %}
-                    <a href="{{site.baseurl}}{{nav.target.en}}">{{ nav.name.en }}</a>
+                    <a href="{{nav.target.en}}">{{ nav.name.en }}</a>
                     {% elsif page.lang == "fr" %}
-                    <a href="{{site.baseurl}}{{nav.target.fr}}">{{ nav.name.fr }}</a>
+                    <a href="{{nav.target.fr}}">{{ nav.name.fr }}</a>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -41,9 +41,9 @@
 
         <div class="nav-item" id="nav-lang-switch">
             {% if page.lang == "en" %}
-            <a href="{{site.baseurl}}{{page.translation}}">Français</a>
+            <a href="{{page.translation}}">Français</a>
             {% elsif page.lang == "fr" %}
-            <a href="{{site.baseurl}}{{page.translation}}">English</a>
+            <a href="{{page.translation}}">English</a>
             {% endif %}
         </div>
     </div>

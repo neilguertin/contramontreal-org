@@ -29,7 +29,7 @@ cd contramontreal-org
 sudo apt install ruby-full gcc g++ make
 gem install jekyll bundler jekyll-theme-cayman
 bundler install
-bundler exec jekyll serve --livereload --baseurl="" --drafts
+bundler exec jekyll serve --livereload --drafts
 ```
 The website should now be live at http://localhost:4000/
 
