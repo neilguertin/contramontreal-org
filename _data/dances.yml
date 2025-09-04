@@ -295,7 +295,7 @@
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
   band: "Open Band"
-  caller: "On Call"
+  caller: "Peter Simonyi"
   special:
     en: "Free dance!"
     fr: "Danse gratuite!"
@@ -307,8 +307,8 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "TBD"
-  caller: "TBD"
+  band: "Trèfle"
+  caller: "On Call"
 
 - date: "2025-10-05"
   time:
@@ -327,7 +327,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "TBD"
+  band: "Grace Hendrickson-Jones & Friends"
   caller: "On Call"
 
 - date: "2025-11-09"
@@ -348,7 +348,7 @@
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
   band: "TBD"
-  caller: "TBD"
+  caller: "On Call"
 
 - date: "2025-12-07"
   time:
@@ -358,7 +358,7 @@
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
   band: "TBD"
-  caller: "TBD"
+  caller: "Bev Bernbaum"
 
 - date: "2025-12-20"
   time:
