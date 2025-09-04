@@ -8,29 +8,29 @@
     en: Get Involved
     fr: Impliquez-vous
   target:
-    en: /en/getinvolved
-    fr: /fr/impliquezvous
+    en: /en/get-involved
+    fr: /fr/impliquez-vous
 - name:
     en: Code of Conduct
     fr: Code de conduite
   target:
-    en: /en/codeofconduct
-    fr: /fr/codedeconduite
+    en: /en/code-of-conduct
+    fr: /fr/code-de-conduite
 - name:
     en: Mailing List
     fr: Liste de diffusion
   target:
-    en: /en/mailinglist
-    fr: /fr/listedediffusion
+    en: /en/mailing-list
+    fr: /fr/liste-de-diffusion
 - name:
     en: Past Dances
     fr: Danses passées
   target:
-    en: /en/pastdances
-    fr: /fr/dansespassées
+    en: /en/past-dances
+    fr: /fr/danses-passées
 - name:
     en: Other Dance Communities
     fr: Autres communautés de dance
   target:
-    en: /en/other_communities
-    fr: /fr/autres_communautés
+    en: /en/other-communities
+    fr: /fr/autres-communautés
