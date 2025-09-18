@@ -307,7 +307,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "Trèfle: Patrice Boucher, Nicolas Villeneuve & Louis-Philippe Pharand"
+  band: "Trèfle: Patrice Boucher, Jean Rhéaume & Louis-Philippe Pharand"
   caller: "On Call"
 
 - date: "2025-10-05"
@@ -327,8 +327,8 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "Grace Hendrickson-Jones & Friends"
-  caller: "On Call"
+  band: "Les Quatre Patates"
+  caller: "Les Quatre Patates"
 
 - date: "2025-11-09"
   time:
@@ -370,3 +370,62 @@
   band: "Open Band"
   caller: "On Call"
 
+- date: "2026-01-04"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "Cedar Stanistreet, Eric McDonald & Grace Hendrickson-Jones"
+  caller: "TBD"
+
+- date: "2026-01-17"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2026-02-08"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2026-02-21"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2026-03-08"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2026-03-28"
+  time:
+    en: "6:30pm - 9:30pm"
+    fr: "18h30 - 21h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
