@@ -46,19 +46,23 @@
         </div>
         <div class="dance-band">
             {% if page.lang == "en" %}
-                {% if dance.band and dance.band != "" %}Band: {{dance.band}}{% endif %}
+                {% if dance.band and dance.band != "" %}
+                    {% if dance.band == "TBD" %}Band: TBD{% else %}Band: <strong>{{dance.band}}</strong>{% endif %}
+                {% endif %}
             {% elsif page.lang == "fr" %}
                 {% if dance.band and dance.band != "" %}
-                    {% if dance.band == "TBD" %}Musique par: À déterminer{% else %}Musique par: {{dance.band}}{% endif %}
+                    {% if dance.band == "TBD" %}Musique par: À déterminer{% else %}Musique par: <strong>{{dance.band}}</strong>{% endif %}
                 {% endif %}
             {% endif %}
         </div>
         <div class="dance-caller">
             {% if page.lang == "en" %}
-                {% if dance.caller and dance.caller != "" %}Caller: {{dance.caller}}{% endif %}
+                {% if dance.caller and dance.caller != "" %}
+                    {% if dance.caller == "TBD" %}Caller: TBD{% else %}Caller: <strong>{{dance.caller}}</strong>{% endif %}
+                {% endif %}
             {% elsif page.lang == "fr" %}
                 {% if dance.caller and dance.caller != "" %}
-                    {% if dance.caller == "TBD" %}Callé par: À déterminer{% else %}Callé par: {{dance.caller}}{% endif %}
+                    {% if dance.caller == "TBD" %}Callé par: À déterminer{% else %}Callé par: <strong>{{dance.caller}}</strong>{% endif %}
                 {% endif %}
             {% endif %}
         </div>
