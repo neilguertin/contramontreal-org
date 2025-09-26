@@ -3,11 +3,12 @@ window.onload = function() {
     if (navigator.userAgent.search("Firefox") > 0) {
         var p = document.getElementById('firefox-warning');
         if (p) {
-            p.style.display = 'initial';
+            p.style.display = 'block';
         }
     }
 }
 </script>
+
 <h1>
 {% if page.lang == "en" %}
 Mailing List
@@ -24,6 +25,8 @@ Utilisez ce formulaire pour vous inscrire à notre liste de diffusion. (Environ 
 {% endif %}
 </p>
 
+{% include mailchimp_form.html form_id="00cdf2e3f0" %}
+
 <p id=firefox-warning style='display: none'>
 {% if page.lang == "en" %}
 Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to sign up using this form. Click the shield icon to the left of the address bar.
@@ -31,5 +34,3 @@ Firefox users may need to turn off "Enhanced Tracking Protection" for this site 
 Les utilisateurs de Firefox devront peut-être désactiver la « Protection renforcée contre le pistage » pour ce site afin de pouvoir s'inscrire via ce formulaire. Cliquez sur l'icône en forme de bouclier à gauche de la barre d'adresse.
 {% endif %}
 </p>
-
-{% include mailchimp_form.html %}

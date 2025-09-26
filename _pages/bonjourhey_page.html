@@ -1,0 +1,63 @@
+<h1>
+{% if page.lang == "en" %}
+Bonjour-Hey Contra Dance Weekend
+{% elsif page.lang == "fr" %}
+Bonjour-Hey fin de semaine de contredanse
+{% endif %}
+</h1>
+
+<p class="center-highlight">
+<span class="big">
+{% if page.lang == "en" %}
+April 17-19, 2026
+{% elsif page.lang == "fr" %}
+17-19 Avril 2026
+{% endif %}
+</span>
+<br>Genticorum (Pascal Gemme, Nicholas Williams &amp; Yann Falquet)
+<br>Cedar Stanistreet, Grace Hendrickson-Jones &amp; Eric McDonald
+<br>Bev Bernbaum
+<br>Luke Donforth
+<br>Centre Saint-Barthélemy, Montreal, QC
+</p>
+
+{% if page.lang == "en" %}
+<h2>Registration opening soon!</h2>
+{% elsif page.lang == "fr" %}
+<h2>Les inscriptions ouvrent bientôt !</h2>
+{% endif %}
+
+{% if page.lang == "en" %}
+<p>Sign up for our Bonjour-Hey mailing list so you don't miss any future updates.</p>
+{% elsif page.lang == "fr" %}
+<p>Inscrivez-vous à notre liste de diffusion Bonjour-Hey pour ne manquer aucune future mise à jour.</p>
+{% endif %}
+
+{% include mailchimp_form.html form_id="00caf3e3f0" tags='<div hidden=""><input type="hidden" name="tags" value="15368604"></div>' %}
+
+<script>
+window.onload = function() {
+    if (navigator.userAgent.search("Firefox") > 0) {
+        var p = document.getElementById('firefox-warning');
+        if (p) {
+            p.style.display = 'block';
+        }
+    }
+}
+</script>
+<p id=firefox-warning style='display: none'>
+{% if page.lang == "en" %}
+Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to sign up using this form. Click the shield icon to the left of the address bar.
+{% elsif page.lang == "fr" %}
+Les utilisateurs de Firefox devront peut-être désactiver la « Protection renforcée contre le pistage » pour ce site afin de pouvoir s'inscrire via ce formulaire. Cliquez sur l'icône en forme de bouclier à gauche de la barre d'adresse.
+{% endif %}
+</p>
+
+{% if page.lang == "en" %}
+<h2>Contact</h2>
+<p>Email us at <a href="mailto:bonjourhey@contramontreal.org">bonjourhey@contramontreal.org</a></p>
+{% elsif page.lang == "fr" %}
+<h2>Contactez-nous</h2>
+<p>Envoyez-nous un courriel à <a href="mailto:bonjourhey@contramontreal.org">bonjourhey@contramontreal.org</a></p>
+{% endif %}
+

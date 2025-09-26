@@ -18,6 +18,14 @@
             {% endif %}
         </div>
 
+        <div class="nav-item">
+            {% if page.lang == "en" %}
+            <a href="/en/bonjour-hey">Bonjour-Hey</a>
+            {% elsif page.lang == "fr" %}
+            <a href="/fr/bonjour-hey">Bonjour-Hey</a>
+            {% endif %}
+        </div>
+
         <div class="dropdown nav-item">
             <div class="dropdown-trigger">
                 {% if page.lang == "en" %}
