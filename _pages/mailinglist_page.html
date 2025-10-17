@@ -1,13 +1,22 @@
 <script>
 window.onload = function() {
     if (navigator.userAgent.search("Firefox") > 0) {
+{% if page.lang == "en" %}
+firefox_warning_text = "Firefox users may need to turn off \"Enhanced Tracking Protection\" for this site in order to use the forms on this page. Click the shield icon to the left of the address bar."
+{% elsif page.lang == "fr" %}
+firefox_warning_text = "Les utilisateurs de Firefox devront peut-être désactiver la « Protection renforcée contre le pistage » pour ce site afin d'utiliser les formulaires de cette page. Cliquez sur l'icône en forme de bouclier à gauche de la barre d'adresse."
+{% endif %}
         var p = document.getElementById('firefox-warning');
         if (p) {
             p.style.display = 'block';
+            p.innerHTML = firefox_warning_text;
         }
     }
 }
 </script>
+<p id=firefox-warning style='display: none'>
+</p>
+
 
 <h1>
 {% if page.lang == "en" %}
@@ -26,14 +35,6 @@ Utilisez ce formulaire pour vous inscrire à notre liste de diffusion régulièr
 </p>
 
 {% include mailchimp_form.html form_id="00cdf2e3f0" %}
-
-<p id=firefox-warning style='display: none'>
-{% if page.lang == "en" %}
-Firefox users may need to turn off "Enhanced Tracking Protection" for this site in order to use the forms on this page. Click the shield icon to the left of the address bar.
-{% elsif page.lang == "fr" %}
-Les utilisateurs de Firefox devront peut-être désactiver la « Protection renforcée contre le pistage » pour ce site afin d'utiliser les formulaires de cette page. Cliquez sur l'icône en forme de bouclier à gauche de la barre d'adresse.
-{% endif %}
-</p>
 
 <br> <!-- a little bit of extra padding between sections -->
 
