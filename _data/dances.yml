@@ -347,7 +347,7 @@
   location:
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
-  band: "TBD"
+  band: "Richard Forest, Suzie Blanchette, Jean Rheaume"
   caller: "On Call"
 
 - date: "2025-12-07"
@@ -429,3 +429,48 @@
     fr: "Patro Villeray Salle à déterminer"
   band: "TBD"
   caller: "TBD"
+
+- date: "2026-04-12"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
+- date: "2026-04-17"
+  special:
+    en: "Special event: Bonjour-Hey"
+    fr: "Événement spécial: Bonjour-Hey"
+  text:
+    en: "Preregistration required: <a href='/en/bonjour-hey'>Link</a>"
+    fr: "Préinscription requise: <a href='/fr/bonjour-hey'>Lien</a>"
+
+- date: "2026-04-18"
+  special:
+    en: "Special event: Bonjour-Hey"
+    fr: "Événement spécial: Bonjour-Hey"
+  text:
+    en: "Preregistration required: <a href='/en/bonjour-hey'>Link</a>"
+    fr: "Préinscription requise: <a href='/fr/bonjour-hey'>Lien</a>"
+
+- date: "2026-04-19"
+  special:
+    en: "Special event: Bonjour-Hey"
+    fr: "Événement spécial: Bonjour-Hey"
+  text:
+    en: "Preregistration required: <a href='/en/bonjour-hey'>Link</a>"
+    fr: "Préinscription requise: <a href='/fr/bonjour-hey'>Lien</a>"
+
+- date: "2026-05-03"
+  time:
+    en: "2:30pm - 5:30pm"
+    fr: "14h30 - 17h30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "TBD"
+
