@@ -161,3 +161,7 @@ nav .dropdown:hover .dropdown-content {
   position: relative;
   z-index: -1;
 }
+
+table td, table th {
+  border: none !important;
+}
