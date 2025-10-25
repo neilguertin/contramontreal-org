@@ -86,12 +86,27 @@ nav .dropdown:hover .dropdown-content {
 
 .center-highlight {
     text-align: center;
+    text-wrap-style: balance;
     color: $accent-text-color;
     font-weight: bold;
     font-size: 1.5rem;
+    container-type: inline-size;
+}
+.center-highlight p {
+    margin: 0;
+}
+@container (width < 56ch) {
+    /* 56ch is measured to be about the length of Genticorum's line; if the
+     * container is narrower, it's likely the text is wrapping. */
+    .center-highlight p + p {
+        margin-top: 0.5em;
+    }
 }
 .center-highlight .big {
     font-size: 2rem;
+}
+.no-break-spans span {
+  text-wrap-mode: nowrap;
 }
 .register-button {
     text-align: center;
