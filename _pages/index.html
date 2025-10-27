@@ -5,4 +5,14 @@ lang: en
 permalink: /
 translation: /fr/accueil
 ---
+<script>
+    // Which comes first in the list of preferences, any kind of English or any
+    // kind of French?  If neither is present, preferredLang will be undefined.
+    const preferredLang = navigator.languages
+        .map(tag => (new Intl.Locale(tag)).language)
+        .find(lang => lang === "en" || lang === "fr");
+    if (preferredLang === "fr") {
+        location.replace("{{page.translation}}");
+    }
+</script>
 {% include_relative home_page.html %}
