@@ -1,11 +1,114 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <meta charset="utf-8">
-  <title>Redirecting&hellip;</title>
-  <link rel="canonical" href="{{ page.redirect.to }}">
-  <script>location="{{ page.redirect.to }}"</script>
-  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
-  <meta name="robots" content="noindex">
-  <h1>Redirecting&hellip;</h1>
-  <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+<!doctype html>
+<html>
+<meta charset="utf-8">
+{%- comment -%}
+vim: ft=liquid noai
+
+This template is used by jekyll-redirect-from to create redirect pages for the
+URL aliases listed in real pages' front matter under `redirect_from`.
+
+When the alias URL includes a language (starts with /en/ or /fr/), we assume
+the redirect was specified as intended and render a simple redirect to the
+specified page, `page.redirect.to`.  There is a special exception to recognize
+/faq_en and /faq_fr as including a language.
+
+When the alias URL does not include a language (e.g. /faq, /impliquez-vous),
+the redirect page we render here will use JavaScript to get the user's language
+preference from the browser and redirect to the appropriate language.
+
+In that case, the redirect specified in redirect_from is generally to the
+language of the URL, e.g. /impliquez-vous -> /fr/impliquez-vous, or English by
+default, /faq -> /en/faq.  That becomes the default redirect if the user's
+language preference cannot be determined (does not include English or French,
+JS is disabled, etc).
+
+{%- endcomment -%}
+
+{%- assign dest_page_url = page.redirect.to
+    | slice: site.url.size, page.redirect.to.size
+    | url_decode -%}
+
+{%- assign maybe_language = page.redirect.from | slice: 0, 4 -%}
+{%- if dest_page_url == "/faq_en" -%}
+{%- assign maybe_language = "/en/" -%}
+{%- elsif dest_page_url == "/faq_fr" -%}
+{%- assign maybe_language = "/fr/" -%}
+{%- endif -%}
+
+{%- case maybe_language -%}
+{%- when "/en/", "/fr/" -%}
+{%- assign lang = maybe_language | slice: 1, 2 -%}
+
+<title>
+    {%- if lang == "en" -%}
+    Redirect page
+    {%- elsif lang == "fr" -%}
+    Page de redirection
+    {%- endif -%}
+</title>
+<link rel="canonical" href="{{ page.redirect.to }}">
+<script>location="{{ page.redirect.to }}"</script>
+<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+<meta name="robots" content="noindex">
+<h1>
+    {%- if lang == "en" -%}
+    Redirecting&helllip;
+    {%- elsif lang == "fr" -%}
+    En redirection&hellip;
+    {%- endif -%}
+</h1>
+<a href="{{ page.redirect.to }}">
+    {%- if lang == "en" -%}
+    Click here if you are not redirected.
+    {%- elsif lang == "fr" -%}
+    Cliquez ici si vous n'êtes pas redirigé.
+    {%- endif -%}
+</a>
+
+{%- else -%}
+{%- comment -%}
+`maybe_language` is not one of "/en/", "/fr/", so a language is not specified
+in the URL.  Try to detect the user's language.  Set `lang` to the default
+langage, which is the language of page.redirect.to; this is usually the
+language of the URL part (e.g. "fr" for /code-de-conduite).
+{%- endcomment -%}
+
+{%- assign dest_page =
+    site.pages | where: "url", dest_page_url | first -%}
+{%- assign trans_page =
+    site.pages | where: "translation", dest_page_url | first -%}
+{%- assign lang = dest_page.lang -%}
+<script>
+    const preferredLang = navigator.languages
+        .map(tag => (new Intl.Locale(tag)).language)
+        .find(lang => lang === "en" || lang === "fr");
+    const dest = preferredLang === "{{ trans_page.lang }}"
+        ? "{{ trans_page.url }}"
+        : "{{ page.redirect.to }}";
+    location.replace(dest);
+</script>
+<title>
+    {%- if lang == "en" -%}
+    Redirect page
+    {%- elsif lang == "fr" -%}
+    Page de redirection
+    {%- endif -%}
+</title>
+<link rel="canonical" href="{{ page.redirect.to }}">
+<meta name="robots" content="noindex">
+{%- if lang == "en" -%}
+    <h1>Choose your preferred language:</h1>
+    <ul>
+    <li>English: <a href="{{ page.redirect.to }}">{{ dest_page.title }}</a>
+    <li>Français: <a href="{{ trans_page.url }}">{{ trans_page.title }}</a>
+    </ul>
+{%- elsif lang == "fr" -%}
+    <h1>Choisissez votre langue préférée:</h1>
+    <ul>
+    <li>Français: <a href="{{ page.redirect.to }}">{{ dest_page.title }}</a>
+    <li>English: <a href="{{ trans_page.url }}">{{ trans_page.title }}</a>
+    </ul>
+{%- endif -%}
+
+{%- endcase -%}
 </html>
