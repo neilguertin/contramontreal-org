@@ -67,6 +67,9 @@ nav .dropdown:hover .dropdown-content {
     background-color: $code-bg-color;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    border-radius: 0.75rem;
 }
 .dance-special {
     color: $accent-text-color;
