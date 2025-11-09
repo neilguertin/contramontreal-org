@@ -347,7 +347,7 @@
   location:
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
-  band: "Richard Forest, Suzie Blanchette, Jean Rheaume"
+  band: "Richard Forest, Suzie Blanchette, Jean Rhéaume"
   caller: "On Call"
 
 - date: "2025-12-07"
@@ -357,7 +357,7 @@
   location:
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
-  band: "TBD"
+  band: "Jacob deGroot-Maggetti & Jean Rhéaume"
   caller: "Bev Bernbaum"
 
 - date: "2025-12-20"
@@ -367,7 +367,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "Open Band"
+  band: "Michael Ayles, Émile Hooper, & Grace Hendrickson-Jones"
   caller: "On Call"
 
 - date: "2026-01-04"
@@ -407,8 +407,8 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
-  caller: "TBD"
+  band: "Klezmer Contra"
+  caller: "Mary Wesley"
 
 - date: "2026-03-08"
   time:
@@ -472,5 +472,5 @@
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
   band: "TBD"
-  caller: "TBD"
+  caller: "Drew Delaware"
 
