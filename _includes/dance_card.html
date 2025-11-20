@@ -23,13 +23,19 @@
         {% endif %}
         </div>
         <div class="dance-time">
-            {% if page.lang == "en" %}
-                {% if dance.time.en and dance.time.en != "" %}
-                    {% if dance.time.en == "TBD" %}Time: TBD{% else %}{{dance.time.en}}{% endif %}
-                {% endif %}
-            {% elsif page.lang == "fr" %}
-                {% if dance.time.fr and dance.time.fr != "" %}
-                    {% if dance.time.fr == "TBD" %}Heure: À déterminer{% else %}{{dance.time.fr}}{% endif %}
+            {% if dance.start_time and dance.start_time != "" and dance.end_time and dance.end_time != "" %}
+                {% if page.lang == "en" %}
+                    {% if dance.start_time == "TBD" or dance.end_time == "TBD" %}
+                        Time: TBD
+                    {% else %}
+                        {{ dance.date | append: "T" | append: dance.start_time | date: "%l:%M%P" }} &ndash; {{ dance.date | append: "T" | append: dance.end_time | date: "%l:%M%P" }}
+                    {% endif %}
+                {% elsif page.lang == "fr" %}
+                    {% if dance.start_time == "TBD" or dance.end_time == "TBD" %}
+                        Heure: À déterminer
+                    {% else %}
+                        {{ dance.date | append: "T" | append: dance.start_time | date: "%kh%M" }} &ndash; {{ dance.date | append: "T" | append: dance.end_time | date: "%kh%M" }}
+                    {% endif %}
                 {% endif %}
             {% endif %}
         </div>
