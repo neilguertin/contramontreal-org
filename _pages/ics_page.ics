@@ -21,7 +21,6 @@ LOCATION:{% if dance.location.en == "TBD" %}TBD{% else %}{{dance.location.en}}{%
 LOCATION:{% if dance.location.fr == "TBD" %}À déterminer{% else %}{{dance.location.fr}}{% endif %}
 {% endif %}
 {% endif %}
-{% if page.lang == "en" %}
 {% if dance.caller and dance.caller != "" and dance.caller != "TBD" %}
 {% assign hasCaller = true %}
 {% else %}
@@ -32,9 +31,10 @@ LOCATION:{% if dance.location.fr == "TBD" %}À déterminer{% else %}{{dance.loca
 {% else %}
 {% assign hasBand = false %}
 {% endif %}
-DESCRIPTION:Contra dance{% if hasCaller or hasBand %} with {% endif %}{% if hasCaller %}{{dance.caller}}{% if hasBand %} and {% endif %}{% endif %}{% if hasBand %}{{dance.band}}{% endif %}
+{% if page.lang == "en" %}
+DESCRIPTION:Contra dance{% if hasCaller %} called by {{dance.caller}}{% endif %}{% if hasBand %} with music by {{dance.band}}{% endif %}
 {% elsif page.lang == "fr" %}
-DESCRIPTION:Contredanse {% if hasCaller or hasBand %} avec {% endif %}{% if hasCaller %}{{dance.caller}}{% if hasBand %} et {% endif %}{% endif %}{% if hasBand %}{{dance.band}}{% endif %}
+DESCRIPTION:Contredanse{% if hasCaller %} callée par {{dance.caller}}{% endif %}{% if hasBand %} avec musique par {{dance.band}}{% endif %}
 {% endif %}
 END:VEVENT
 
