@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ContraMontreal//iCal//EN
+
+{% for dance in site.data.dances %}
+{% assign current_date = 'today' | date: '%Y-%m-%d' %}
+{% if dance.date and dance.date >= current_date and dance.start_time and dance.end_time %}
+
+BEGIN:VEVENT
+UID:{{ dance.date | date: "%Y%m%d" }}@contramontreal.org
+DTSTAMP:{{ 'now' | date: "%Y%m%dT%H%M%S" }}
+DTSTART;TZID=America/Toronto:{{ dance.date | append: "T" | append: dance.start_time | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZID=America/Toronto:{{ dance.date | append: "T" | append: dance.end_time | date: "%Y%m%dT%H%M%S" }}
+SUMMARY:ContraMontreal
+{% if page.lang == "en" %}
+{% if dance.location.en and dance.location.en != "" %}
+LOCATION:{% if dance.location.en == "TBD" %}TBD{% else %}{{dance.location.en}}{% endif %}
+{% endif %}
+{% elsif page.lang == "fr" %}
+{% if dance.location.fr and dance.location.fr != "" %}
+LOCATION:{% if dance.location.fr == "TBD" %}À déterminer{% else %}{{dance.location.fr}}{% endif %}
+{% endif %}
+{% endif %}
+{% if page.lang == "en" %}
+{% if dance.caller and dance.caller != "" and dance.caller != "TBD" %}
+{% assign hasCaller = true %}
+{% else %}
+{% assign hasCaller = false %}
+{% endif %}
+{% if dance.band and dance.band != "" and dance.band != "TBD" %}
+{% assign hasBand = true %}
+{% else %}
+{% assign hasBand = false %}
+{% endif %}
+DESCRIPTION:Contra dance{% if hasCaller or hasBand %} with {% endif %}{% if hasCaller %}{{dance.caller}}{% if hasBand %} and {% endif %}{% endif %}{% if hasBand %}{{dance.band}}{% endif %}
+{% elsif page.lang == "fr" %}
+DESCRIPTION:Contredanse {% if hasCaller or hasBand %} avec {% endif %}{% if hasCaller %}{{dance.caller}}{% if hasBand %} et {% endif %}{% endif %}{% if hasBand %}{{dance.band}}{% endif %}
+{% endif %}
+END:VEVENT
+
+{% endif %}
+{% endfor %}
+
+END:VCALENDAR

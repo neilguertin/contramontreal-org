@@ -1,0 +1,8 @@
+---
+layout: null
+lang: fr
+permalink: /fr/contramontreal.ics
+translation: /en/contramontreal.ics
+sitemap: false
+---
+{% include_relative ics_page.ics %}

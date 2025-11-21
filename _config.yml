@@ -63,7 +63,7 @@ compress_html:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - _pages/*_page.html
+  - _pages/*_page.*
 
 include:
   - _pages
