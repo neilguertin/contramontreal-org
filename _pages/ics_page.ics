@@ -1,6 +1,25 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//ContraMontreal//iCal//EN
+NAME:ContraMontreal
+X-WR-CALNAME:ContraMontreal
+{% if page.lang == "en" %}
+DESCRIPTION:Upcoming dances for ContraMontreal https://www.contramontreal.org/
+X-WR-CALDESC:Upcoming events for ContraMontreal https://www.contramontreal.org/
+{% elsif page.lang == "fr" %}
+DESCRIPTION:Danses à venir pour ContraMontreal https://www.contramontreal.org/accueil
+X-WR-CALDESC:Danses à venir pour ContraMontreal https://www.contramontreal.org/accueil
+{% endif %}
+TIMEZONE-ID:America/Toronto
+X-WR-TIMEZONE:America/Toronto
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H
+{% if page.lang == "en" %}
+URL:https://www.contramontreal.org/en/contramontreal.ics
+{% elsif page.lang == "fr" %}
+URL:https://www.contramontreal.org/fr/contramontreal.ics
+{% endif %}
+METHOD:PUBLISH
 
 {% for dance in site.data.dances %}
 {% assign current_date = 'today' | date: '%Y-%m-%d' %}
