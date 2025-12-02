@@ -1,5 +1,5 @@
 <div class="dance-card">
-    <div class="upcoming-dance" data-date="{{dance.date}}">
+    <div class="upcoming-dance" data-date="{{dance.date}}" data-vevent="{% include vevent.txt dance = dance %}">
         <div class="dance-special">
             {% if page.lang == "en" %}
                 {{dance.special.en}}
@@ -77,6 +77,15 @@
                 {{dance.text.en}}
             {% elsif page.lang == "fr" %}
                 {{dance.text.fr}}
+            {% endif %}
+        </div>
+        <div>
+            {% if dance.start_time and dance.end_time %}
+                {% if page.lang == "en" %}
+                    <a class="ics-link" href="javascript:void(0);">Download .ics</a>
+                {% elsif page.lang == "fr" %}
+                    <a class="ics-link" href="javascript:void(0);">Télécharger .ics</a>
+                {% endif %}
             {% endif %}
         </div>
     </div>
