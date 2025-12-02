@@ -331,7 +331,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "TBD"
+  band: "Michael Ayles, Émile Hooper, & Grace Hendrickson-Jones"
   caller: "On Call"
 
 - date: "2026-01-04"
@@ -341,7 +341,7 @@
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
   band: "Cedar Stanistreet, Eric McDonald & Grace Hendrickson-Jones"
-  caller: "TBD"
+  caller: "Nicholas Smith"
 
 - date: "2026-01-17"
   start_time: "18:30"
@@ -349,7 +349,7 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
+  band: "Open Band"
   caller: "TBD"
 
 - date: "2026-02-08"
@@ -359,7 +359,7 @@
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
   band: "TBD"
-  caller: "TBD"
+  caller: "On Call"
 
 - date: "2026-02-21"
   start_time: "18:30"
@@ -376,8 +376,8 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
-  caller: "TBD"
+  band: "The Star Charters"
+  caller: "Qwill Duvall"
 
 - date: "2026-03-28"
   start_time: "18:30"
@@ -385,8 +385,8 @@
   location:
     en: "Patro Villeray Room TBD"
     fr: "Patro Villeray Salle à déterminer"
-  band: "TBD"
-  caller: "TBD"
+  band: "Open Band"
+  caller: "On Call"
 
 - date: "2026-04-12"
   start_time: "14:30"
@@ -430,3 +430,20 @@
   band: "Kaw Creek"
   caller: "Drew Delaware"
 
+- date: "2026-05-16"
+  start_time: "18:30"
+  end_time: "21:30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "TBD"
+  caller: "On Call"
+
+- date: "2026-06-07"
+  start_time: "14:30"
+  end_time: "17:30"
+  location:
+    en: "Patro Villeray Room TBD"
+    fr: "Patro Villeray Salle à déterminer"
+  band: "Here on the Hill"
+  caller: "TBD"
