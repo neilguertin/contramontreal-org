@@ -25,8 +25,8 @@
                 next_dance_div.style.display = 'initial';
                 break;
             } else {
-                // This also hides the card
-                dance_node.classList.add('past-dance');
+                // Hide the card
+                dance_node.parentElement.classList.add('hide-dance-card');
             }
         }
     }
