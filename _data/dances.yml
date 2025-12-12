@@ -435,7 +435,7 @@
   end_time: "17:30"
   location:
     en: "Patro Villeray Room 1.01"
-    fr: "Patro Villeray Salle à déterminer"
+    fr: "Patro Villeray Salle 1.01"
   band: "Kaw Creek"
   caller: "Drew Delaware"
 
@@ -457,7 +457,7 @@
   band: "Here on the Hill"
   caller: "TBD"
 
-  - date: "2026-06-20"
+- date: "2026-06-20"
   start_time: "18:30"
   end_time: "21:30"
   location:
