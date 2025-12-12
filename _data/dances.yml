@@ -338,8 +338,8 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "Cedar Stanistreet, Eric McDonald & Grace Hendrickson-Jones"
   caller: "Nicholas Smith"
 
@@ -347,17 +347,26 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "Open Band"
+  caller: "TBD"
+
+- date: "2026-01-31"
+  start_time: "18:30"
+  end_time: "21:30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "TBD"
   caller: "TBD"
 
 - date: "2026-02-08"
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
   band: "TBD"
   caller: "On Call"
 
@@ -365,8 +374,8 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "Klezmer Contra"
   caller: "Mary Wesley"
 
@@ -374,8 +383,8 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "The Star Charters"
   caller: "Qwill Duvall"
 
@@ -383,8 +392,8 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "Open Band"
   caller: "On Call"
 
@@ -392,8 +401,8 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room 1.03"
+    fr: "Patro Villeray Salle 1.03"
   band: "TBD"
   caller: "TBD"
 
@@ -425,7 +434,7 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
+    en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle à déterminer"
   band: "Kaw Creek"
   caller: "Drew Delaware"
@@ -434,8 +443,8 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
   band: "TBD"
   caller: "On Call"
 
@@ -443,7 +452,16 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room TBD"
-    fr: "Patro Villeray Salle à déterminer"
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
   band: "Here on the Hill"
+  caller: "TBD"
+
+  - date: "2026-06-20"
+  start_time: "18:30"
+  end_time: "21:30"
+  location:
+    en: "Patro Villeray Room R.01"
+    fr: "Patro Villeray Salle R.01"
+  band: "TBD"
   caller: "TBD"
