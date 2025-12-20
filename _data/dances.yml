@@ -340,7 +340,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "Cedar Stanistreet, Eric McDonald & Grace Hendrickson-Jones"
+  band: "Dawn Chorus (Cedar Stanistreet, Eric McDonald & Grace Hendrickson-Jones)"
   caller: "Nicholas Smith"
 
 - date: "2026-01-17"
@@ -358,8 +358,8 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "TBD"
-  caller: "TBD"
+  band: "Les Quatre Patates"
+  caller: "Les Quatre Patates"
 
 - date: "2026-02-08"
   start_time: "14:30"
@@ -445,7 +445,7 @@
   location:
     en: "Patro Villeray Room R.01"
     fr: "Patro Villeray Salle R.01"
-  band: "TBD"
+  band: "Kittiwake"
   caller: "On Call"
 
 - date: "2026-06-07"
