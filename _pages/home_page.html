@@ -32,6 +32,51 @@
     }
     document.addEventListener('DOMContentLoaded', getNextDance);
 </script>
+<script>
+
+    function createICS(divs) {
+        ics = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ContraMontreal//iCal//EN
+` + divs.map(d => d.dataset.vevent).join("") +
+`END:VCALENDAR`
+        return ics;
+    }
+
+    function downloadICS(icsData) {
+        console.log(icsData);
+        if (!icsData) {
+            console.log("no data");
+            return;
+        }
+        const blob = new Blob([icsData], {type: 'text/calendar;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.setAttribute('href', url);
+        a.setAttribute('download', 'contramontreal.ics');
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        icsLinks = document.getElementsByClassName('ics-link');
+        for (l of icsLinks) {
+            let d = l.parentElement.parentElement;
+            l.onclick = function() {
+                downloadICS(createICS([d]))
+                return false;
+            };
+        }
+
+        allIcsLink = document.getElementById('ics-link-all');
+        allIcsLink.onclick = function() {
+            downloadICS(createICS(Array.from(document.getElementsByClassName('upcoming-dance'))));
+            return false;
+        };
+    });
+</script>
 
 <img class="banner-img" alt="A blurry photo of dancers" src="/assets/images/banner_cropped.jpg">
 
@@ -190,6 +235,12 @@
     <p><a href="/en/past-dances">View our past dances</a></p>
 {% elsif page.lang == "fr" %}
     <p><a href="/fr/danses-passées">Voir nos danses passées</a></p>
+{% endif %}
+
+{% if page.lang == "en" %}
+    <p><a id="ics-link-all" href="javascript:void(0);">Download .ics for all</a></p>
+{% elsif page.lang == "fr" %}
+    <p><a id="ics-link-all" href="javascript:void(0);">Télécharger .ics pour tous</a></p>
 {% endif %}
 
 {% for dance in site.data.dances %}
