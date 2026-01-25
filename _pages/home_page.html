@@ -185,6 +185,42 @@
 </h2>
 
 {% if page.lang == "en" %}
+<p>Subscribe to our calendar so that every dance appears automatically in your calendar!</p>
+<ul>
+    <li>
+        <a href="https://calendar.google.com/calendar/r?cid=webcal://www.contramontreal.org/en/contramontreal.ics">Direct link for Google Calendar</a>
+        <ul>
+            <li>Step 1: Open this link from a dekstop browser to add it to your Google Calendar</li>
+            <li>Step 2: Enable the calendar from the mobile app to see events on your phone</li>
+        </ul>
+    </li>
+    <li>
+        <a href="webcal://www.contramontreal.org/en/contramontreal.ics">Webcal link for other calendar apps</a>
+        <ul>
+            <li>Steps vary. May be labeled "Subscribe to calendar" or "Add calendar from URL" or similar.</li>
+        </ul>
+    </li>
+</ul>
+{% elsif page.lang == "fr" %}
+<p>Abonnez-vous à notre calendrier pour que chaque danse s'affiche automatiquement dans votre agenda!</p>
+<ul>
+    <li>
+        <a href="https://calendar.google.com/calendar/r?cid=webcal://www.contramontreal.org/fr/contramontreal.ics">Lien direct pour Google Agenda</a>
+        <ul>
+            <li>Étape 1: Ouvrez ce lien sur votre ordinateur pour l'ajouter à votre Google Agenda</li>
+            <li>Étape 2: Activez le calendrier dans l'application mobile pour voir les événements sur votre téléphone.</li>
+        </ul>
+    </li>
+    <li>
+        <a href="webcal://www.contramontreal.org/fr/contramontreal.ics">Lien Webcal pour les autres applications de calendrier</a>
+        <ul>
+            <li>Les étapes varient. Elles peuvent s'intituler «S'abonner au calendrier», «Ajouter un calendrier avec une URL» ou similaire.</li>
+        </ul>
+    </li>
+</ul>
+{% endif %}
+
+{% if page.lang == "en" %}
     <p><a href="/en/past-dances">View our past dances</a></p>
 {% elsif page.lang == "fr" %}
     <p><a href="/fr/danses-passées">Voir nos danses passées</a></p>
