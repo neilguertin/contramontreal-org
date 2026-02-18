@@ -374,17 +374,32 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room R.01"
-    fr: "Patro Villeray Salle R.01"
-  band: "Klezmer Contra"
+    en: "Patro Villeray Room 1.03"
+    fr: "Patro Villeray Salle 1.03"
+  band: "Klezmer contra: Isaac Beaudet Lefebvre, François-Xavier Dueymes, Zafer Mamilli & Eden Glasman"
   caller: "Mary Wesley"
 
-- date: "2026-03-08"
+- date: "2026-02-28"
   start_time: "14:30"
   end_time: "17:30"
   location:
     en: "Patro Villeray Room 1.01"
     fr: "Patro Villeray Salle 1.01"
+  band: ""
+  caller: ""
+  special:
+    en: "Special free event: Contra Connections: An Intermediate Contra Dance Workshop"
+    fr: "Événement spécial gratuit: Contra Connections: Un atelier de contredanse de niveau intermédiaire"
+  text:
+    en: "Been loving contra as a new dancer but want to take your dancing to the next level? Been dancing for years but want a stronger foundation? Want time to learn or practice some flourishes outside of a dance? Join us for an intermediate Contra workshop! We’ll look at less common, intermediate contra moves and break them down, learn flourishes and fun places to put them, and go over techniques to make partnered dancing feel smooth, attentive, and effortlessly connected. All skills will be taught in context, with time to practice on your own, with a partner, and in full dances selected to bring it all together. This workshop is free! It was created by Brooklyn Contra and Alyssa Adkins."
+    fr: "Vous adorez la contra et souhaitez progresser ? Vous dansez depuis des années et désirez consolider vos bases ? Vous aimeriez apprendre ou pratiquer des figures en dehors des soirées ? Rejoignez-nous pour un atelier de contra de niveau intermédiaire ! Nous explorerons des figures de contra intermédiaires moins courantes et les décomposerons, apprendrons des \"flourish\" et comment les intégrer de façon originale, et aborderons des techniques pour une danse en couple fluide, attentive et naturelle. Toutes les compétences seront enseignées en contexte, avec du temps pour pratiquer seul(e), avec un partenaire et sur des chorégraphies complètes sélectionnées pour une mise en pratique optimale. Cet atelier est gratuit! Il a été créé par Brooklyn Contra et Alyssa Adkins."
+
+- date: "2026-03-08"
+  start_time: "14:30"
+  end_time: "17:30"
+  location:
+    en: "Patro Villeray Room 1.01-1.02"
+    fr: "Patro Villeray Salle 1.01-1.02"
   band: "The Star Charters"
   caller: "Qwill Duvall"
 
@@ -392,8 +407,8 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room R.01"
-    fr: "Patro Villeray Salle R.01"
+    en: "Patro Villeray Room 1.03"
+    fr: "Patro Villeray Salle 1.03"
   band: "Open Band"
   caller: "On Call"
 
@@ -401,8 +416,8 @@
   start_time: "14:30"
   end_time: "17:30"
   location:
-    en: "Patro Villeray Room 1.03"
-    fr: "Patro Villeray Salle 1.03"
+    en: "Patro Villeray Room 1.02-1.03"
+    fr: "Patro Villeray Salle 1.02-1.03"
   band: "McKinley James & François-Félix Roy"
   caller: "Grace Hendrickson-Jones"
 
@@ -443,8 +458,8 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room R.01"
-    fr: "Patro Villeray Salle R.01"
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
   band: "Kittiwake"
   caller: "On Call"
 
@@ -461,7 +476,7 @@
   start_time: "18:30"
   end_time: "21:30"
   location:
-    en: "Patro Villeray Room R.01"
-    fr: "Patro Villeray Salle R.01"
+    en: "Patro Villeray Room 1.01"
+    fr: "Patro Villeray Salle 1.01"
   band: "TBD"
   caller: "TBD"
