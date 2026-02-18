@@ -13,6 +13,9 @@
 #   for English and French. Band and Caller do not.
 # Special and text are optional. Special will appear in big
 #   red very noticable text
+# cal_title and cal_description are optional. They will appear
+#   in calendar events for those who have subscribed to the
+#   webcal feed
 
 #- date: ""
 #  start_time: "TBD"
@@ -26,6 +29,12 @@
 #    en: ""
 #    fr: ""
 #  special:
+#    en: ""
+#    fr: ""
+#  cal_title:
+#    en: ""
+#    fr: ""
+#  cal_description:
 #    en: ""
 #    fr: ""
 
@@ -393,6 +402,12 @@
   text:
     en: "Been loving contra as a new dancer but want to take your dancing to the next level? Been dancing for years but want a stronger foundation? Want time to learn or practice some flourishes outside of a dance? Join us for an intermediate Contra workshop! We’ll look at less common, intermediate contra moves and break them down, learn flourishes and fun places to put them, and go over techniques to make partnered dancing feel smooth, attentive, and effortlessly connected. All skills will be taught in context, with time to practice on your own, with a partner, and in full dances selected to bring it all together. This workshop is free! It was created by Brooklyn Contra and Alyssa Adkins."
     fr: "Vous adorez la contra et souhaitez progresser ? Vous dansez depuis des années et désirez consolider vos bases ? Vous aimeriez apprendre ou pratiquer des figures en dehors des soirées ? Rejoignez-nous pour un atelier de contra de niveau intermédiaire ! Nous explorerons des figures de contra intermédiaires moins courantes et les décomposerons, apprendrons des \"flourish\" et comment les intégrer de façon originale, et aborderons des techniques pour une danse en couple fluide, attentive et naturelle. Toutes les compétences seront enseignées en contexte, avec du temps pour pratiquer seul(e), avec un partenaire et sur des chorégraphies complètes sélectionnées pour une mise en pratique optimale. Cet atelier est gratuit! Il a été créé par Brooklyn Contra et Alyssa Adkins."
+  cal_title:
+    en: "Contra Connections: An Intermediate Contra Dance Workshop"
+    fr: "Contra Connections: Un atelier de contredanse de niveau intermédiaire"
+  cal_description:
+    en: "Contra Connections: An Intermediate Contra Dance Workshop"
+    fr: "Contra Connections: Un atelier de contredanse de niveau intermédiaire"
 
 - date: "2026-03-08"
   start_time: "14:30"

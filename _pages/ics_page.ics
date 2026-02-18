@@ -30,7 +30,19 @@ UID:{{ dance.date | date: "%Y%m%d" }}@contramontreal.org
 DTSTAMP:{{ 'now' | date: "%Y%m%dT%H%M%S" }}
 DTSTART;TZID=America/Toronto:{{ dance.date | append: "T" | append: dance.start_time | date: "%Y%m%dT%H%M%S" }}
 DTEND;TZID=America/Toronto:{{ dance.date | append: "T" | append: dance.end_time | date: "%Y%m%dT%H%M%S" }}
-SUMMARY:ContraMontreal
+{% if page.lang == "en" %}
+{% if dance.cal_title.en %}
+SUMMARY:ContraMontreal {{dance.cal_title.en}}
+{% else %}
+SUMMARY:ContraMontreal Contra Dance
+{% endif %}
+{% elsif page.lang == "fr" %}
+{% if dance.cal_title.fr %}
+SUMMARY:ContraMontreal {{dance.cal_title.fr}}
+{% else %}
+SUMMARY:ContraMontreal contredanse
+{% endif %}
+{% endif %}
 {% if page.lang == "en" %}
 {% if dance.location.en and dance.location.en != "" %}
 LOCATION:{% if dance.location.en == "TBD" %}TBD{% else %}{{dance.location.en}}{% endif %}
@@ -51,9 +63,17 @@ LOCATION:{% if dance.location.fr == "TBD" %}À déterminer{% else %}{{dance.loca
 {% assign hasBand = false %}
 {% endif %}
 {% if page.lang == "en" %}
+{% if dance.cal_description.en %}
+DESCRIPTION:{{dance.cal_description.en}}
+{% else %}
 DESCRIPTION:Contra dance{% if hasCaller %} called by {{dance.caller}}{% endif %}{% if hasBand %} with music by {{dance.band}}{% endif %}
+{% endif %}
 {% elsif page.lang == "fr" %}
+{% if dance.cal_description.fr %}
+DESCRIPTION:{{dance.cal_description.fr}}
+{% else %}
 DESCRIPTION:Contredanse{% if hasCaller %} callée par {{dance.caller}}{% endif %}{% if hasBand %} avec musique par {{dance.band}}{% endif %}
+{% endif %}
 {% endif %}
 END:VEVENT
 
